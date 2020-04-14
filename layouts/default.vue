@@ -1,5 +1,12 @@
 <template>
-  <div>
+  <div class="relative">
+    <a
+      class="fixed top-0 right-0 mt-16 mr-8 py-2 px-6 anchor z-50"
+      href="mailto:maxim7port@gmail.com"
+      target="_blank"
+    >
+      Contact
+    </a>
     <nuxt />
   </div>
 </template>
@@ -109,12 +116,22 @@ html {
   background-color: #0c0c0c;
 }
 
-.rounded-2xl {
-  border-radius: 2rem;
+.gradient {
+  background: linear-gradient(to right, #f687b3, #ed64a6);
 }
 
-.z-1000 {
-  z-index: 1000;
+.anchor {
+  @apply rounded-full text-2xl text-porti-black font-bold;
+
+  &:hover {
+    @apply shadow-lg text-white;
+    background: linear-gradient(to right, #f687b3, #ed64a6);
+  }
+
+  &:focus {
+    @apply shadow-lg text-white outline-none;
+    background: linear-gradient(to right, #f687b3, #ed64a6);
+  }
 }
 
 // typorgaphy
@@ -124,7 +141,7 @@ h1 {
 }
 
 h2 {
-  @apply text-2xl text-porti-black font-black;
+  @apply text-2xl text-porti-black font-bold;
 }
 
 h3 {
