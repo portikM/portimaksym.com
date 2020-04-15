@@ -79,12 +79,132 @@
         </div>
       </div>
     </section>
-    <section class="h-screen"></section>
+    <section class="px-12">
+      <div class="pt-10 pb-20 max-w-3xl text-lg leading-loose">
+        <p>
+          I am creative front-end developer, UI designer and want-to-be
+          entrepreneur. Just like any other tech guy I like clean design and
+          beautiful code but let’s be honest here, those are not the things the
+          end user is gonna care about. What the user is gonna care about is how
+          well my solution works for them and that is what I committed to keep
+          on constantly improving at. When I don’t code or design I like playing
+          board games and watch movies that make me think a lot.
+        </p>
+        <br />
+        <p>
+          I was born and raised in Ukraine and I currently reside in Toronto,
+          Canada.
+        </p>
+      </div>
+      <div
+        class="pb-10 flex grid grid-cols-1 lg:grid-cols-2 lg:gap-10 max-w-5xl text-lg"
+      >
+        <div>
+          <h2 class="pb-12">Main skills</h2>
+          <!-- developer -->
+          <div class="flex mb-10">
+            <object
+              class="w-24 mr-4"
+              :data="codeIcon"
+              type="image/svg+xml"
+            ></object>
+            <div>
+              <h3 class="pb-1">Full-stack development</h3>
+              <p class="text-gray-500 max-w-md">
+                I position myself as front-end developer but I can be flexable.
+                See my stack.
+              </p>
+            </div>
+          </div>
+          <!-- designer -->
+          <div class="flex mb-10">
+            <object
+              class="w-24 mr-4"
+              :data="layoutIcon"
+              type="image/svg+xml"
+            ></object>
+            <div>
+              <h3 class="pb-1">Web design and UI</h3>
+              <p class="text-gray-500 max-w-md">
+                Websites, applications, experiences. Big and small.
+              </p>
+            </div>
+          </div>
+          <!-- branding -->
+          <div class="flex mb-10">
+            <object
+              class="w-24 mr-4"
+              :data="editIcon"
+              type="image/svg+xml"
+            ></object>
+            <div>
+              <h3 class="pb-1">Branding</h3>
+              <p class="text-gray-500 max-w-md">
+                A bit of graphic, logo and identity design.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="pb-12">Key values</h2>
+          <!-- tools -->
+          <div class="flex mb-10">
+            <object
+              class="w-24 mr-4"
+              :data="gearIcon"
+              type="image/svg+xml"
+            ></object>
+            <div>
+              <h3 class="pb-1">Code and design is just the tools</h3>
+              <p class="text-gray-500 max-w-md">
+                I position myself as front-end developer but I can be flexable.
+                See my stack.
+              </p>
+            </div>
+          </div>
+          <!-- details -->
+          <div class="flex mb-10">
+            <object
+              class="w-24 mr-4"
+              :data="eyeIcon"
+              type="image/svg+xml"
+            ></object>
+            <div>
+              <h3 class="pb-1">Details matter</h3>
+              <p class="text-gray-500 max-w-md">
+                Because all those small things form the overall experience.
+              </p>
+            </div>
+          </div>
+          <!-- learning -->
+          <div class="flex mb-10">
+            <object
+              class="w-24 mr-4"
+              :data="bookIcon"
+              type="image/svg+xml"
+            ></object>
+            <div>
+              <h3 class="pb-1">Never stop learning</h3>
+              <p class="text-gray-500 max-w-md">
+                I may not know how to make it better right now but hard work
+                will pay off.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 import portiLogoShadowed from '~/assets/images/porti_logo_shadowed.svg'
+import codeIcon from '~/assets/images/code_icon.svg'
+import layoutIcon from '~/assets/images/layout_icon.svg'
+import editIcon from '~/assets/images/edit_icon.svg'
+import gearIcon from '~/assets/images/gear_icon.svg'
+import eyeIcon from '~/assets/images/eye_icon.svg'
+import bookIcon from '~/assets/images/book_icon.svg'
 
 export default {
   head() {
@@ -107,7 +227,13 @@ export default {
   },
   data() {
     return {
-      portiLogoShadowed
+      portiLogoShadowed,
+      codeIcon,
+      layoutIcon,
+      editIcon,
+      gearIcon,
+      eyeIcon,
+      bookIcon
     }
   }
 }
