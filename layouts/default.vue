@@ -117,20 +117,26 @@ html {
 }
 
 .gradient {
-  background: linear-gradient(to right, #f687b3, #ed64a6);
+  background: linear-gradient(to right, #ed64a6, #f687b3);
 }
 
 .anchor {
-  @apply rounded-full text-2xl text-porti-black font-bold;
+  @apply rounded-full text-xl text-porti-black font-bold;
 
   &:hover {
     @apply shadow-lg text-white;
-    background: linear-gradient(to right, #f687b3, #ed64a6);
+    background: linear-gradient(to right, #ed64a6, #f687b3);
   }
 
   &:focus {
     @apply shadow-lg text-white outline-none;
-    background: linear-gradient(to right, #f687b3, #ed64a6);
+    background: linear-gradient(to right, #ed64a6, #f687b3);
+  }
+}
+
+@screen sm {
+  .anchor {
+    @apply text-2xl;
   }
 }
 

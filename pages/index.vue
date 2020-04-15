@@ -5,7 +5,7 @@
       style="background: linear-gradient(to bottom, #EDF2F7, white);"
     >
       <div class="relative flex items-center max-w-6xl h-screen">
-        <h1 class="pr-2 text-4xl md:text-5xl z-20">
+        <h1 class="pr-2 text-3xl sm:text-4xl md:text-5xl z-20">
           Hello, my name is
           <br />
           Maksym Portianoi
@@ -87,8 +87,15 @@
           beautiful code but let’s be honest here, those are not the things the
           end user is gonna care about. What the user is gonna care about is how
           well my solution works for them and that is what I committed to keep
-          on constantly improving at. When I don’t code or design I like playing
-          board games and watch movies that make me think a lot.
+          on constantly improving at.
+        </p>
+        <br />
+        <p>
+          When I don’t code or design I like playing board games and watch
+          movies that make me think a lot. Also I cannot live a day without
+          Spotify - music is my drug! Most of my playlists consist of heavy
+          music, but I really like a bit of everything. And don’t get me stated
+          on how much I love going to concerts.
         </p>
         <br />
         <p>
