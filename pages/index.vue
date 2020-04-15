@@ -97,12 +97,14 @@
         </p>
       </div>
       <div
-        class="pb-10 flex grid grid-cols-1 lg:grid-cols-2 lg:gap-10 max-w-5xl text-lg"
+        class="pb-10 flex grid grid-cols-1 gap-10 lg:grid-cols-2 max-w-5xl text-lg"
       >
         <div>
-          <h2 class="pb-12">Main skills</h2>
+          <h2 class="pb-12 text-center sm:text-left">Main skills</h2>
           <!-- developer -->
-          <div class="flex mb-10">
+          <div
+            class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
+          >
             <object
               class="w-24 mr-4"
               :data="codeIcon"
@@ -117,7 +119,9 @@
             </div>
           </div>
           <!-- designer -->
-          <div class="flex mb-10">
+          <div
+            class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
+          >
             <object
               class="w-24 mr-4"
               :data="layoutIcon"
@@ -131,7 +135,9 @@
             </div>
           </div>
           <!-- branding -->
-          <div class="flex mb-10">
+          <div
+            class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
+          >
             <object
               class="w-24 mr-4"
               :data="editIcon"
@@ -146,9 +152,11 @@
           </div>
         </div>
         <div>
-          <h2 class="pb-12">Key values</h2>
+          <h2 class="pb-12 text-center sm:text-left">Key values</h2>
           <!-- tools -->
-          <div class="flex mb-10">
+          <div
+            class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
+          >
             <object
               class="w-24 mr-4"
               :data="gearIcon"
@@ -163,7 +171,9 @@
             </div>
           </div>
           <!-- details -->
-          <div class="flex mb-10">
+          <div
+            class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
+          >
             <object
               class="w-24 mr-4"
               :data="eyeIcon"
@@ -177,7 +187,9 @@
             </div>
           </div>
           <!-- learning -->
-          <div class="flex mb-10">
+          <div
+            class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
+          >
             <object
               class="w-24 mr-4"
               :data="bookIcon"
