@@ -79,7 +79,7 @@
         </div>
       </div>
     </section>
-    <section class="px-12">
+    <section class="px-12 pb-8">
       <div class="pt-10 pb-20 max-w-3xl text-lg leading-loose">
         <p>
           I am creative front-end developer, UI designer and want-to-be
@@ -121,7 +121,14 @@
               <h3 class="pb-1">Full-stack development</h3>
               <p class="text-gray-500 max-w-md">
                 I position myself as front-end developer but I can be flexable.
-                See my stack.
+                See
+                <a
+                  class="text-gray-500 border-b border-gray-400 hover:text-gray-600"
+                  href="https://stackshare.io/portik/stack"
+                  target="_blank"
+                >
+                  my stack </a
+                >.
               </p>
             </div>
           </div>
