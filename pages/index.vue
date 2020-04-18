@@ -21,6 +21,7 @@
             class="p-2 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner inline-flex items-center mr-1"
             href="https://github.com/portikM"
             target="_blank"
+            @click="$ga.event('Social Media', 'click', 'github')"
           >
             <span class="w-8 h-8 block inline-flex items-center">
               <!-- prettier-ignore -->
@@ -36,6 +37,7 @@
             class="p-2 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner inline-flex items-center mr-1"
             href="https://dribbble.com/portik"
             target="_blank"
+            @click="$ga.event('Social Media', 'click', 'dribbble')"
           >
             <span class="w-8 h-8 block inline-flex items-center">
               <!-- prettier-ignore -->
@@ -51,6 +53,7 @@
             class="p-2 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner inline-flex items-center mr-1"
             href="https://www.linkedin.com/in/portik/"
             target="_blank"
+            @click="$ga.event('Social Media', 'click', 'linkedin')"
           >
             <span class="w-8 h-8 block inline-flex items-center">
               <!-- prettier-ignore -->
@@ -66,6 +69,7 @@
             class="p-2 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner inline-flex items-center mr-1"
             href="https://medium.com/@portik"
             target="_blank"
+            @click="$ga.event('Social Media', 'click', 'medium')"
           >
             <span class="w-8 h-8 block inline-flex items-center">
               <!-- prettier-ignore -->
@@ -126,6 +130,7 @@
                   class="text-gray-500 border-b border-gray-400 hover:text-gray-600"
                   href="https://stackshare.io/portik/stack"
                   target="_blank"
+                  @click="$ga.event('Social Media', 'click', 'stackshare')"
                 >
                   my stack</a
                 >.

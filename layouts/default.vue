@@ -4,6 +4,7 @@
       class="fixed top-0 right-0 mt-16 mr-8 py-2 px-6 anchor z-50"
       href="mailto:portimaksym@gmail.com"
       target="_blank"
+      @click="$ga.event('Contact', 'click')"
     >
       Contact
     </a>
@@ -20,6 +21,7 @@
           class="p-2 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner inline-flex items-center mr-1"
           href="https://github.com/portikM"
           target="_blank"
+          @click="$ga.event('Social Media', 'click', 'github')"
         >
           <span class="w-8 h-8 block inline-flex items-center">
             <!-- prettier-ignore -->
@@ -35,6 +37,7 @@
           class="p-2 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner inline-flex items-center mr-1"
           href="https://dribbble.com/portik"
           target="_blank"
+          @click="$ga.event('Social Media', 'click', 'dribbble')"
         >
           <span class="w-8 h-8 block inline-flex items-center">
             <!-- prettier-ignore -->
@@ -50,6 +53,7 @@
           class="p-2 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner inline-flex items-center mr-1"
           href="https://www.linkedin.com/in/portik/"
           target="_blank"
+          @click="$ga.event('Social Media', 'click', 'linkedin')"
         >
           <span class="w-8 h-8 block inline-flex items-center">
             <!-- prettier-ignore -->
@@ -65,6 +69,7 @@
           class="p-2 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner inline-flex items-center mr-1"
           href="https://medium.com/@portik"
           target="_blank"
+          @click="$ga.event('Social Media', 'click', 'medium')"
         >
           <span class="w-8 h-8 block inline-flex items-center">
             <!-- prettier-ignore -->
