@@ -82,12 +82,12 @@
     <section class="px-12 pb-8">
       <div class="pt-10 pb-20 max-w-3xl text-lg leading-loose">
         <p>
-          I am creative front-end developer, UI designer and want-to-be
-          entrepreneur. Just like any other tech guy I like clean design and
-          beautiful code but let’s be honest here, those are not the things the
-          end user is gonna care about. What the user is gonna care about is how
-          well my solution works for them and that is what I committed to keep
-          on constantly improving at.
+          I am creative front-end developer and UI designer aspiring to be
+          entrepreneur. Like most tech people who build unique products, I like
+          clean design and beautiful code but let’s be honest here, those are
+          not the things the end user is gonna care about. What the user is
+          gonna care about is how well my solution works for them and that is
+          what I committed to keep on constantly improving at.
         </p>
         <br />
         <p>
@@ -127,7 +127,7 @@
                   href="https://stackshare.io/portik/stack"
                   target="_blank"
                 >
-                  my stack </a
+                  my stack</a
                 >.
               </p>
             </div>
@@ -160,7 +160,7 @@
             <div>
               <h3 class="pb-1">Branding</h3>
               <p class="text-gray-500 max-w-md">
-                A bit of graphic, logo and identity design.
+                I can do some graphic, logo and identity design.
               </p>
             </div>
           </div>
@@ -177,10 +177,9 @@
               type="image/svg+xml"
             ></object>
             <div>
-              <h3 class="pb-1">Code and design is just the tools</h3>
+              <h3 class="pb-1">Code and design are just tools</h3>
               <p class="text-gray-500 max-w-md">
-                I position myself as front-end developer but I can be flexable.
-                See my stack.
+                Prioritize project and business goals to engineer the solution.
               </p>
             </div>
           </div>
@@ -196,7 +195,8 @@
             <div>
               <h3 class="pb-1">Details matter</h3>
               <p class="text-gray-500 max-w-md">
-                Because all those small things form the overall experience.
+                Because small things added together, lead to complete
+                experiences.
               </p>
             </div>
           </div>
@@ -213,7 +213,7 @@
               <h3 class="pb-1">Never stop learning</h3>
               <p class="text-gray-500 max-w-md">
                 I may not know how to make it better right now but hard work
-                will pay off.
+                will eventually pay off.
               </p>
             </div>
           </div>
