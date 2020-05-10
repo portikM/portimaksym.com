@@ -1,26 +1,56 @@
 <template>
   <main class="relative">
+    <nuxt-link
+      v-if="$route.path !== '/'"
+      class="fixed top-0 left-0 mt-16 ml-8 py-2 px-6 z-50 inline-flex items-center text-gray-500 hover:text-gray-600"
+      to="/"
+    >
+      <!-- prettier-ignore -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current mr-1">
+        <path d="M19 12H5M12 19l-7-7 7-7" />
+      </svg>
+      Home
+    </nuxt-link>
     <a
+      v-if="$route.path !== '/resume'"
       class="fixed top-0 right-0 mt-16 mr-8 py-2 px-6 anchor z-50"
       href="mailto:portimaksym@gmail.com"
       target="_blank"
+      rel="noopener"
       @click="$ga.event('Contact', 'click')"
     >
       Contact
     </a>
+    <a
+      v-else
+      class="fixed top-0 right-0 mt-16 mr-8 py-2 px-6 anchor z-50 inline-flex items-center"
+      :href="require('~/static/Maksym_Portianoi_Resume.pdf')"
+      target="_blank"
+      @click="$ga.event('Resume', 'download')"
+    >
+      <!-- prettier-ignore -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="stroke-current mr-1">
+        <path
+          d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"
+        />
+      </svg>
+      Download
+    </a>
     <nuxt />
     <footer
-      class="container flex flex-col items-center sm:items-start px-12 pb-12"
+      class="container flex flex-col items-center sm:items-start px-12 pb-20"
     >
       <h3 class="mt-3 mb-3 sm:mb-0">Have a wonderful day!</h3>
       <div
-        class="sm:absolute sm:bottom-0 sm:right-0 sm:mb-12 sm:mr-8 inline-flex"
+        class="sm:absolute sm:bottom-0 sm:right-0 sm:mb-20 sm:mr-8 inline-flex"
       >
         <!-- github -->
         <a
           class="p-2 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner inline-flex items-center mr-1"
           href="https://github.com/portikM"
           target="_blank"
+          aria-label="github"
+          rel="noopener"
           @click="$ga.event('Social Media', 'click', 'github')"
         >
           <span class="w-8 h-8 block inline-flex items-center">
@@ -37,6 +67,8 @@
           class="p-2 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner inline-flex items-center mr-1"
           href="https://dribbble.com/portik"
           target="_blank"
+          aria-label="dribbble"
+          rel="noopener"
           @click="$ga.event('Social Media', 'click', 'dribbble')"
         >
           <span class="w-8 h-8 block inline-flex items-center">
@@ -53,6 +85,8 @@
           class="p-2 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner inline-flex items-center mr-1"
           href="https://www.linkedin.com/in/portik/"
           target="_blank"
+          aria-label="linkedin"
+          rel="noopener"
           @click="$ga.event('Social Media', 'click', 'linkedin')"
         >
           <span class="w-8 h-8 block inline-flex items-center">
@@ -69,6 +103,8 @@
           class="p-2 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner inline-flex items-center mr-1"
           href="https://medium.com/@portik"
           target="_blank"
+          aria-label="medium"
+          rel="noopener"
           @click="$ga.event('Social Media', 'click', 'medium')"
         >
           <span class="w-8 h-8 block inline-flex items-center">
