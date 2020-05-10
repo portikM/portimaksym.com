@@ -14,13 +14,16 @@
           class="w-3/4 absolute right-0 sm:w-1/2 md:w-1/3 md:static z-10"
           :data="portiLogoShadowed"
           type="image/svg+xml"
-        ></object>
+          >My logo</object
+        >
         <div class="absolute bottom-0 inline-flex mb-12">
           <!-- github -->
           <a
             class="p-2 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner inline-flex items-center mr-1"
             href="https://github.com/portikM"
             target="_blank"
+            aria-label="github"
+            rel="noopener"
             @click="$ga.event('Social Media', 'click', 'github')"
           >
             <span class="w-8 h-8 block inline-flex items-center">
@@ -37,6 +40,8 @@
             class="p-2 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner inline-flex items-center mr-1"
             href="https://dribbble.com/portik"
             target="_blank"
+            aria-label="dribbble"
+            rel="noopener"
             @click="$ga.event('Social Media', 'click', 'dribbble')"
           >
             <span class="w-8 h-8 block inline-flex items-center">
@@ -53,6 +58,8 @@
             class="p-2 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner inline-flex items-center mr-1"
             href="https://www.linkedin.com/in/portik/"
             target="_blank"
+            aria-label="linkedin"
+            rel="noopener"
             @click="$ga.event('Social Media', 'click', 'linkedin')"
           >
             <span class="w-8 h-8 block inline-flex items-center">
@@ -69,6 +76,8 @@
             class="p-2 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner inline-flex items-center mr-1"
             href="https://medium.com/@portik"
             target="_blank"
+            aria-label="medium"
+            rel="noopener"
             @click="$ga.event('Social Media', 'click', 'medium')"
           >
             <span class="w-8 h-8 block inline-flex items-center">
@@ -116,11 +125,9 @@
           <div
             class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
           >
-            <object
-              class="w-24 mr-4"
-              :data="codeIcon"
-              type="image/svg+xml"
-            ></object>
+            <object class="w-24 mr-4" :data="codeIcon" type="image/svg+xml"
+              >Code icon</object
+            >
             <div>
               <h3 class="pb-1">Full-stack development</h3>
               <p class="text-gray-500 max-w-md">
@@ -130,6 +137,7 @@
                   class="text-gray-500 border-b border-gray-400 hover:text-gray-600"
                   href="https://stackshare.io/portik/stack"
                   target="_blank"
+                  rel="noopener"
                   @click="$ga.event('Social Media', 'click', 'stackshare')"
                 >
                   my stack</a
@@ -141,11 +149,9 @@
           <div
             class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
           >
-            <object
-              class="w-24 mr-4"
-              :data="layoutIcon"
-              type="image/svg+xml"
-            ></object>
+            <object class="w-24 mr-4" :data="layoutIcon" type="image/svg+xml"
+              >Design icon</object
+            >
             <div>
               <h3 class="pb-1">Web design and UI</h3>
               <p class="text-gray-500 max-w-md">
@@ -157,11 +163,9 @@
           <div
             class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
           >
-            <object
-              class="w-24 mr-4"
-              :data="editIcon"
-              type="image/svg+xml"
-            ></object>
+            <object class="w-24 mr-4" :data="editIcon" type="image/svg+xml"
+              >Edit icon</object
+            >
             <div>
               <h3 class="pb-1">Branding</h3>
               <p class="text-gray-500 max-w-md">
@@ -176,15 +180,14 @@
           <div
             class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
           >
-            <object
-              class="w-24 mr-4"
-              :data="gearIcon"
-              type="image/svg+xml"
-            ></object>
+            <object class="w-24 mr-4" :data="gearIcon" type="image/svg+xml"
+              >Gear icon</object
+            >
             <div>
               <h3 class="pb-1">Code and design are just tools</h3>
               <p class="text-gray-500 max-w-md">
-                Prioritize project and business goals to engineer the solution.
+                Prioritize project and business goals when engineering the
+                solution.
               </p>
             </div>
           </div>
@@ -192,11 +195,9 @@
           <div
             class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
           >
-            <object
-              class="w-24 mr-4"
-              :data="eyeIcon"
-              type="image/svg+xml"
-            ></object>
+            <object class="w-24 mr-4" :data="eyeIcon" type="image/svg+xml"
+              >Eye icon</object
+            >
             <div>
               <h3 class="pb-1">Details matter</h3>
               <p class="text-gray-500 max-w-md">
@@ -209,11 +210,9 @@
           <div
             class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
           >
-            <object
-              class="w-24 mr-4"
-              :data="bookIcon"
-              type="image/svg+xml"
-            ></object>
+            <object class="w-24 mr-4" :data="bookIcon" type="image/svg+xml"
+              >Book icon</object
+            >
             <div>
               <h3 class="pb-1">Never stop learning</h3>
               <p class="text-gray-500 max-w-md">
