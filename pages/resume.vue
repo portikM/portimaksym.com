@@ -1,6 +1,17 @@
 <template>
-  <div class="pt-10 container mx-auto">
-    <pdf :src="require('~/static/Maksym_Portianoi_Resume.pdf')"></pdf>
+  <div>
+    <div
+      v-show="loading"
+      class="h-screen flex justify-center items-center text-center"
+    >
+      <p class="ellipsis-loading">Loading</p>
+    </div>
+    <div v-show="!loading" class="pt-10 container mx-auto">
+      <pdf
+        :src="require('~/static/Maksym_Portianoi_Resume.pdf')"
+        @loaded="loading = false"
+      ></pdf>
+    </div>
   </div>
 </template>
 
@@ -15,6 +26,11 @@ export default {
   },
   components: {
     pdf
+  },
+  data() {
+    return {
+      loading: true
+    }
   }
 }
 </script>
