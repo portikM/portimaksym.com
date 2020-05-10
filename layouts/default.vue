@@ -12,7 +12,7 @@
       Home
     </nuxt-link>
     <a
-      v-if="$route.path !== '/resume'"
+      v-if="!$route.path.includes('resume')"
       class="fixed top-0 right-0 mt-16 mr-8 py-2 px-6 anchor z-50"
       href="mailto:portimaksym@gmail.com"
       target="_blank"
@@ -262,5 +262,30 @@ h2 {
 
 h3 {
   @apply text-xl text-porti-black font-bold;
+}
+
+// animations
+
+.ellipsis-loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsisAnim steps(4, end) 1500ms infinite;
+  animation: ellipsisAnim steps(4, end) 1500ms infinite;
+  content: '\2026'; /* ascii code for the ellipsis character */
+  width: 0px;
+  margin-left: 1px;
+}
+
+@keyframes ellipsisAnim {
+  to {
+    width: 20px;
+  }
+}
+
+@-webkit-keyframes ellipsisAnim {
+  to {
+    width: 20px;
+  }
 }
 </style>
