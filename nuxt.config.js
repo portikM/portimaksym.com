@@ -1,5 +1,8 @@
 
 export default {
+  generate: {
+    fallback: true
+  },
   mode: 'spa',
   /*
   ** Headers of the page
