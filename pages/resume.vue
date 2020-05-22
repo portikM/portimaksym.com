@@ -6,7 +6,7 @@
     >
       <p class="ellipsis-loading">Loading</p>
     </div>
-    <div v-show="!loading" class="pt-10 container mx-auto">
+    <div v-show="!loading" class="pt-24 sm:pt-10 container mx-auto">
       <pdf
         :src="require('~/static/Maksym_Portianoi_Resume.pdf')"
         @loaded="loading = false"
