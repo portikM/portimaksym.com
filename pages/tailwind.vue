@@ -17,7 +17,7 @@
         target="_blank"
         rel="noopener"
       >
-        The Rumie Initiative </a
+        The Rumie Initiative</a
       >. Rumie is a non-profit technology-driven startup where our mission is to
       make learning free and accessible for everyone everywhere. Past few months
       we’ve been actively developing our real-time collaborative tool for
@@ -37,7 +37,8 @@
       describe me with one of my phrases: “I am always down for any adventure
       except for a hunger strike”.<br /><br />
       I am particularly excited about this opportunity because I am deeply
-      passionate about UI and the future of front-end development in general. I
+      passionate about UI and the future of front-end development in general. To
+      give you some idea about the things I like to work on in my free time,
       please check out the
       <a
         class="text-gray-500 border-b border-gray-400 hover:text-gray-600"
@@ -45,8 +46,8 @@
         target="_blank"
         rel="noopener"
       >
-        prototypes
-      </a>
+        prototypes</a
+      >
       of a website I designed for vector illustration library I was planning on
       rolling out later this year. I had an idea to create a vector illustration
       library with API after I realized none of the existing libraries had API
