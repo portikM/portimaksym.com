@@ -2,7 +2,11 @@
   <div
     class="h-screen flex flex-col justify-center items-center text-center container mx-auto"
   >
-    <span class="block text-6xl">🤔</span>
+    <img
+      class="w-64 mx-auto"
+      :src="errorImage"
+      alt="Help! He talks code to me against my will!"
+    />
     <h1 class="pb-4" v-if="error.statusCode === 404">Sorry, page not found</h1>
     <h1 class="pb-4" v-else>Ooops, an error occurred</h1>
     <nuxt-link class="py-2 px-6 anchor z-50 inline-flex items-center" to="/">
@@ -16,7 +20,21 @@
 </template>
 
 <script>
+import notFoundImg from '~/assets/images/404.png'
+import errorImg from '~/assets/images/Error.png'
+
 export default {
-  props: ['error']
+  props: ['error'],
+  data() {
+    return {
+      notFoundImg,
+      errorImg
+    }
+  },
+  computed: {
+    errorImage() {
+      return this.error.statusCode === 404 ? notFoundImg : errorImg
+    }
+  }
 }
 </script>
