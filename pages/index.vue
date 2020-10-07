@@ -10,12 +10,11 @@
           <br />
           Maksym Portianoi
         </h1>
-        <object
+        <img
           class="w-3/4 absolute right-0 sm:w-1/2 md:w-1/3 md:static z-10"
-          :data="portiLogoShadowed"
-          type="image/svg+xml"
-          >My logo</object
-        >
+          :src="flyingDude"
+          alt="Flying Dude Picture"
+        />
         <div class="absolute bottom-0 inline-flex mb-12">
           <!-- github -->
           <a
@@ -95,20 +94,19 @@
     <section class="px-12 pb-8">
       <div class="pt-10 pb-20 max-w-3xl text-lg leading-loose">
         <p>
-          I am creative front-end developer and UI designer aspiring to be
-          entrepreneur. Like most tech people who build unique products, I like
-          clean design and beautiful code but let’s be honest here, those are
-          not the things the end user is gonna care about. What the user is
-          gonna care about is how well my solution works for them and that is
-          what I committed to keep on constantly improving at.
+          I am a creative front-end developer and UI designer aspiring to be an
+          entrepreneur. Like most techies who build unique products, I like
+          clean design and beautiful code, but let’s be honest here, the end
+          users don’t care about those things. What users are going to care
+          about is how well my solution works for them, and that is what I
+          committed to keep constantly getting better at.
         </p>
         <br />
         <p>
-          When I don’t code or design I like playing board games and watch
-          movies that make me think a lot. Also I cannot live a day without
-          Spotify - music is my drug! Most of my playlists consist of heavy
-          music, but I really like a bit of everything. And don’t get me stated
-          on how much I love going to concerts.
+          Outside of that I like to play board games, read books and watch
+          movies that make me think a lot. Also I am learning to play the
+          guitar. My life’s ambition is to travel the world, exploring new
+          cultures and places.
         </p>
         <br />
         <p>
@@ -125,11 +123,11 @@
           <div
             class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
           >
-            <object class="w-24 mr-4" :data="codeIcon" type="image/svg+xml"
-              >Code icon</object
-            >
+            <object class="w-24 mr-4" :data="codeIcon" type="image/svg+xml">
+              Code icon
+            </object>
             <div>
-              <h3 class="pb-1">Full-stack development</h3>
+              <h3 class="pb-1">Software development</h3>
               <p class="text-gray-500 max-w-md">
                 I position myself as front-end developer but I can be flexable.
                 See
@@ -149,9 +147,9 @@
           <div
             class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
           >
-            <object class="w-24 mr-4" :data="layoutIcon" type="image/svg+xml"
-              >Design icon</object
-            >
+            <object class="w-24 mr-4" :data="layoutIcon" type="image/svg+xml">
+              Design icon
+            </object>
             <div>
               <h3 class="pb-1">Web design and UI</h3>
               <p class="text-gray-500 max-w-md">
@@ -163,9 +161,9 @@
           <div
             class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
           >
-            <object class="w-24 mr-4" :data="editIcon" type="image/svg+xml"
-              >Edit icon</object
-            >
+            <object class="w-24 mr-4" :data="editIcon" type="image/svg+xml">
+              Edit icon
+            </object>
             <div>
               <h3 class="pb-1">Branding</h3>
               <p class="text-gray-500 max-w-md">
@@ -180,9 +178,9 @@
           <div
             class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
           >
-            <object class="w-24 mr-4" :data="gearIcon" type="image/svg+xml"
-              >Gear icon</object
-            >
+            <object class="w-24 mr-4" :data="gearIcon" type="image/svg+xml">
+              Gear icon
+            </object>
             <div>
               <h3 class="pb-1">Code and design are just tools</h3>
               <p class="text-gray-500 max-w-md">
@@ -195,14 +193,13 @@
           <div
             class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
           >
-            <object class="w-24 mr-4" :data="eyeIcon" type="image/svg+xml"
-              >Eye icon</object
-            >
+            <object class="w-24 mr-4" :data="eyeIcon" type="image/svg+xml">
+              Eye icon
+            </object>
             <div>
               <h3 class="pb-1">Details matter</h3>
               <p class="text-gray-500 max-w-md">
-                Because small things added together, lead to complete
-                experiences.
+                Small things added together, lead to complete experiences.
               </p>
             </div>
           </div>
@@ -210,14 +207,14 @@
           <div
             class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left mb-10"
           >
-            <object class="w-24 mr-4" :data="bookIcon" type="image/svg+xml"
-              >Book icon</object
-            >
+            <object class="w-24 mr-4" :data="bookIcon" type="image/svg+xml">
+              Book icon
+            </object>
             <div>
               <h3 class="pb-1">Never stop learning</h3>
               <p class="text-gray-500 max-w-md">
                 I may not know how to make it better right now but hard work
-                will eventually pay off.
+                will pay off.
               </p>
             </div>
           </div>
@@ -228,7 +225,7 @@
 </template>
 
 <script>
-import portiLogoShadowed from '~/assets/images/porti_logo_shadowed.svg'
+import flyingDude from '~/assets/images/Flying_Dude.png'
 import codeIcon from '~/assets/images/code_icon.svg'
 import layoutIcon from '~/assets/images/layout_icon.svg'
 import editIcon from '~/assets/images/edit_icon.svg'
@@ -257,7 +254,7 @@ export default {
   },
   data() {
     return {
-      portiLogoShadowed,
+      flyingDude,
       codeIcon,
       layoutIcon,
       editIcon,
