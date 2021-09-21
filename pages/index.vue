@@ -25,7 +25,7 @@
             rel="noopener"
             @click="$ga.event('Social Media', 'click', 'github')"
           >
-            <span class="inline-flex items-center block w-8 h-8">
+            <span class="inline-flex items-center w-8 h-8 ">
               <!-- prettier-ignore -->
               <svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto fill-current">
                 <path
@@ -43,7 +43,7 @@
             rel="noopener"
             @click="$ga.event('Social Media', 'click', 'dribbble')"
           >
-            <span class="inline-flex items-center block w-8 h-8">
+            <span class="inline-flex items-center w-8 h-8 ">
               <!-- prettier-ignore -->
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto fill-current">
                 <path
@@ -61,7 +61,7 @@
             rel="noopener"
             @click="$ga.event('Social Media', 'click', 'linkedin')"
           >
-            <span class="inline-flex items-center block w-8 h-8">
+            <span class="inline-flex items-center w-8 h-8 ">
               <!-- prettier-ignore -->
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto fill-current">
                 <path
@@ -79,7 +79,7 @@
             rel="noopener"
             @click="$ga.event('Social Media', 'click', 'medium')"
           >
-            <span class="inline-flex items-center block w-8 h-8">
+            <span class="inline-flex items-center w-8 h-8 ">
               <!-- prettier-ignore -->
               <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto fill-current">
                 <path
@@ -91,7 +91,7 @@
         </div>
       </div>
     </section>
-    <section class="px-12 pb-8">
+    <section class="px-12">
       <div class="max-w-3xl pt-10 pb-20 text-lg leading-loose">
         <p>
           I am a detail-oriented software engineer and UI designer aspiring to
@@ -112,7 +112,7 @@
         </p>
       </div>
       <div
-        class="flex grid max-w-5xl grid-cols-1 gap-10 pb-10 text-lg lg:grid-cols-2"
+        class="grid max-w-5xl grid-cols-1 gap-10 pb-10 text-lg lg:grid-cols-2"
       >
         <div>
           <h2 class="pb-12 text-center sm:text-left">Main skills</h2>
@@ -216,6 +216,10 @@
         </div>
       </div>
     </section>
+    <section class="px-12 pb-8">
+      <h2 class="text-center lg:text-left">Relevant projects</h2>
+      <Projects />
+    </section>
   </div>
 </template>
 
@@ -227,6 +231,7 @@ import editIcon from '~/assets/images/edit_icon.svg'
 import gearIcon from '~/assets/images/gear_icon.svg'
 import eyeIcon from '~/assets/images/eye_icon.svg'
 import bookIcon from '~/assets/images/book_icon.svg'
+import Projects from '~/components/projects'
 
 export default {
   head() {
@@ -246,6 +251,9 @@ export default {
         }
       ]
     }
+  },
+  components: {
+    Projects
   },
   data() {
     return {
