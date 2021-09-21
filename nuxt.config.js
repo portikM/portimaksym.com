@@ -40,7 +40,8 @@ export default {
     '@nuxtjs/tailwindcss',
     ['@nuxtjs/google-analytics', {
       id: 'UA-163760319-1'
-    }]
+    }],
+    "@nuxtjs/svg",
   ],
   /*
   ** Nuxt.js modules
