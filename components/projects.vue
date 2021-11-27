@@ -8,47 +8,51 @@
       >
         <!-- outil -->
         <div
-          class="flex justify-center py-10 pt-20 transform sm:py-20 lg:ml-8 lg:mr-3 -rotate-12 group"
-          @click="setCurrentProject('outil')"
-          role="button"
+          class="flex justify-center py-10 pt-20 transform sm:py-20 lg:ml-8 lg:mr-3 -rotate-12"
         >
-          <div
-            class="w-64 h-48 rounded-lg shadow-lg sm:h-64 sm:w-72 lg:w-64 lg:h-48 group-content"
-          >
-            <img
-              src="~/assets/images/outil.png"
-              alt=""
-              class="object-cover w-full h-full mb-4 rounded-lg"
-            />
-            <div class="flex justify-between px-4">
-              <h3>Outil</h3>
-              <div class="inline-flex items-center">
-                <NodeJS class="w-5 h-5 mr-2 text-gray-500 fill-current" />
-                <AWS class="w-5 h-5 mr-2 text-gray-500 fill-current" />
-                <Serverless class="w-5 h-5 text-gray-500 fill-current" />
+          <div class="group" @click="setCurrentProject('outil')" role="button">
+            <div
+              class="w-64 h-48 rounded-lg shadow-lg sm:h-64 sm:w-72 lg:w-64 lg:h-48 group-content"
+            >
+              <img
+                src="~/assets/images/outil.png"
+                alt=""
+                class="object-cover w-full h-full mb-4 rounded-lg"
+              />
+              <div class="flex justify-between px-4">
+                <h3>Outil</h3>
+                <div class="inline-flex items-center">
+                  <NodeJS class="w-5 h-5 mr-2 text-gray-500 fill-current" />
+                  <AWS class="w-5 h-5 mr-2 text-gray-500 fill-current" />
+                  <Serverless class="w-5 h-5 text-gray-500 fill-current" />
+                </div>
               </div>
             </div>
           </div>
         </div>
         <!-- illustrapi -->
         <div
-          class="flex justify-center py-10 pb-20 ml-8 transform sm:py-20 -rotate-12 group"
-          @click="setCurrentProject('illustrapi')"
-          role="button"
+          class="flex justify-center py-10 pb-20 ml-8 transform sm:py-20 -rotate-12"
         >
           <div
-            class="w-64 h-48 rounded-lg shadow-lg sm:h-64 sm:w-72 lg:w-64 lg:h-48 group-content"
+            class="group"
+            @click="setCurrentProject('illustrapi')"
+            role="button"
           >
-            <img
-              src="~/assets/images/illustrapi.png"
-              alt=""
-              class="object-cover w-full h-full mb-4 rounded-lg"
-            />
-            <div class="flex justify-between px-4">
-              <h3>Illustrapi</h3>
-              <div class="inline-flex items-center">
-                <NuxtJS class="w-5 h-5 mr-2 text-gray-500 fill-current" />
-                <Tailwind class="w-5 h-5 text-gray-500 fill-current" />
+            <div
+              class="w-64 h-48 rounded-lg shadow-lg sm:h-64 sm:w-72 lg:w-64 lg:h-48 group-content"
+            >
+              <img
+                src="~/assets/images/illustrapi.png"
+                alt=""
+                class="object-cover w-full h-full mb-4 rounded-lg"
+              />
+              <div class="flex justify-between px-4">
+                <h3>Illustrapi</h3>
+                <div class="inline-flex items-center">
+                  <NuxtJS class="w-5 h-5 mr-2 text-gray-500 fill-current" />
+                  <Tailwind class="w-5 h-5 text-gray-500 fill-current" />
+                </div>
               </div>
             </div>
           </div>
