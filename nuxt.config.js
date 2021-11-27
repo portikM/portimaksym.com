@@ -8,11 +8,45 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Maksym Portianoi - software engineer',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: 'Maksym Portianoi - software engineer'
+      },
+      {
+        hid: 'apple-mobile-web-app-title',
+        name: 'apple-mobile-web-app-title',
+        content: 'Maksym Portianoi - software engineer'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Maksym Portianoi - software engineer, front-end developer and UI/UX enthusiast from Canada.'
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content:
+          'Maksym Portianoi - software engineer, front-end developer and UI/UX enthusiast from Canada.'
+      },
+      {
+        hid: 'og:site_name',
+        name: 'og:site_name',
+        content: 'portimaksym.com'
+      },
+      {
+        hid: 'og:url',
+        name: 'og:url',
+        content: 'https://portimaksym.com/'
+      },
+      {
+        hid: 'og:image',
+        name: 'og:image',
+        content: 'https://portimaksym.com/og_image.png'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
