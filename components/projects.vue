@@ -93,7 +93,7 @@
                 href="https://github.com/portikM/outil"
                 target="_blank"
                 aria-label="github"
-                rel="noopener"
+                rel="noopener noreferrer"
                 @click="$ga.event('Portfolio - Outil', 'click', 'github')"
                 class="hover:text-gray-700 focus:outline-none"
               >
@@ -103,7 +103,7 @@
                 href="https://dribbble.com/shots/16043770-Outil-user-friendly-online-recording-tool"
                 target="_blank"
                 aria-label="github"
-                rel="noopener"
+                rel="noopener noreferrer"
                 @click="$ga.event('Portfolio - Outil', 'click', 'dribbble')"
                 class="hover:text-gray-700 focus:outline-none"
               >
@@ -151,7 +151,7 @@
                 class="text-gray-500 border-b border-gray-400 hover:text-gray-600"
                 href="https://undraw.co/"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 unDraw</a
               >.<br /><br />Idea for Illustrapi was inspired while working with
@@ -159,7 +159,7 @@
                 class="text-gray-500 border-b border-gray-400 hover:text-gray-600"
                 href="https://unsplash.com/developers"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Unsplash API</a
               >
@@ -171,7 +171,7 @@
                 href="https://github.com/portikM/illustrapi"
                 target="_blank"
                 aria-label="github"
-                rel="noopener"
+                rel="noopener noreferrer"
                 @click="$ga.event('Portfolio - Illustrapi', 'click', 'github')"
                 class="hover:text-gray-700 focus:outline-none"
               >
@@ -181,7 +181,7 @@
                 href="https://dribbble.com/shots/14714554-Illustrapi-vector-illustration-library-with-API"
                 target="_blank"
                 aria-label="github"
-                rel="noopener"
+                rel="noopener noreferrer"
                 @click="
                   $ga.event('Portfolio - Illustrapi', 'click', 'dribbble')
                 "

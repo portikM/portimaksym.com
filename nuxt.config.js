@@ -8,29 +8,29 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Maksym Portianoi - software engineer',
+    title: 'Maksym Portianoi',
     meta: [
       {
         hid: 'og:title',
         name: 'og:title',
-        content: 'Maksym Portianoi - software engineer'
+        content: 'Maksym Portianoi'
       },
       {
         hid: 'apple-mobile-web-app-title',
         name: 'apple-mobile-web-app-title',
-        content: 'Maksym Portianoi - software engineer'
+        content: 'Maksym Portianoi'
       },
       {
         hid: 'description',
         name: 'description',
         content:
-          'Maksym Portianoi - software engineer, front-end developer and UI/UX enthusiast from Canada.'
+          'Hello, my name is Maksym Portianoi. I am software engineer, front-end developer and UI/UX enthusiast from Canada.'
       },
       {
         hid: 'og:description',
         name: 'og:description',
         content:
-          'Maksym Portianoi - software engineer, front-end developer and UI/UX enthusiast from Canada.'
+          'Hello, my name is Maksym Portianoi. I am software engineer, front-end developer and UI/UX enthusiast from Canada.'
       },
       {
         hid: 'og:site_name',
