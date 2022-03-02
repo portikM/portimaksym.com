@@ -1,10 +1,21 @@
 <template>
-  <div>
+  <div class="relative">
     <section
-      class="px-12"
+      class="px-12 pt-10"
       style="background: linear-gradient(to bottom, #EDF2F7, white);"
     >
-      <div class="relative flex items-center h-screen max-w-6xl">
+      <div class="top-0 w-full px-6 py-4 bg-indigo-200 rounded-lg shadow-lg">
+        <a
+          class="text-sm font-bold text-porti-black banner-link"
+          href="https://savelife.in.ua/en/donate/"
+          target="_block"
+          rel="noopener noreferrer"
+          @click="$ga.event('Banner', 'click')"
+        >
+          Russian warship, go f*** yourself!
+        </a>
+      </div>
+      <div class="relative flex items-center max-w-6xl h-fullpage">
         <h1 class="z-20 pr-2 text-3xl sm:text-4xl md:text-5xl">
           Hello, my name is
           <br />
@@ -15,14 +26,30 @@
           :src="flyingDude"
           alt="Flying Dude Picture"
         />
-        <div class="absolute bottom-0 inline-flex mb-12">
+        <div class="absolute bottom-0 inline-flex mb-32">
+          <!-- email -->
+          <a
+            class="inline-flex items-center p-2 mr-1 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner"
+            href="mailto:portimaksym@gmail.com"
+            target="_blank"
+            aria-label="email"
+            rel="noopener noreferrer"
+            @click="$ga.event('Contact', 'click')"
+          >
+            <span class="inline-flex items-center w-8 h-8 ">
+              <!-- prettier-ignore -->
+              <svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto fill-current">
+                <path d="M11.0001 1.83337C9.59399 1.83331 8.20673 2.15672 6.94563 2.77858C5.68452 3.40043 4.58338 4.30407 3.72738 5.41958C2.87139 6.53509 2.28348 7.83257 2.00916 9.21164C1.73483 10.5907 1.78144 12.0144 2.14536 13.3726C2.50929 14.7308 3.18079 15.987 4.1079 17.0441C5.03502 18.1013 6.1929 18.931 7.49197 19.469C8.79105 20.0071 10.1965 20.2391 11.5996 20.1471C13.0026 20.055 14.3657 19.6415 15.5834 18.9384C15.693 18.8811 15.7898 18.8022 15.8681 18.7065C15.9463 18.6108 16.0044 18.5003 16.0389 18.3815C16.0733 18.2628 16.0834 18.1383 16.0685 18.0156C16.0536 17.8929 16.014 17.7744 15.9521 17.6674C15.8903 17.5604 15.8074 17.4669 15.7085 17.3928C15.6096 17.3186 15.4967 17.2652 15.3766 17.2358C15.2565 17.2064 15.1317 17.2016 15.0097 17.2216C14.8877 17.2417 14.7711 17.2862 14.6667 17.3525C13.2688 18.1597 11.6435 18.483 10.0431 18.2723C8.44265 18.0617 6.95643 17.3288 5.81492 16.1874C4.67341 15.046 3.9404 13.5599 3.72956 11.9595C3.51873 10.3591 3.84185 8.7338 4.64881 7.33573C5.45578 5.93766 6.7015 4.84492 8.19278 4.22697C9.68407 3.60901 11.3376 3.50038 12.8969 3.91791C14.4562 4.33545 15.8342 5.25582 16.8171 6.53629C17.8001 7.81677 18.3331 9.38579 18.3334 11V11.6875C18.3334 12.113 18.1644 12.521 17.8636 12.8219C17.5627 13.1227 17.1547 13.2917 16.7292 13.2917C16.3038 13.2917 15.8958 13.1227 15.5949 12.8219C15.2941 12.521 15.1251 12.113 15.1251 11.6875V7.79171C15.1251 7.54859 15.0285 7.31543 14.8566 7.14353C14.6847 6.97162 14.4515 6.87504 14.2084 6.87504C13.9952 6.8703 13.7871 6.94001 13.6198 7.07219C13.4525 7.20436 13.3365 7.39073 13.2917 7.59921C12.6179 7.13316 11.8194 6.88081 11.0001 6.87504C10.31 6.86679 9.62884 7.03181 9.01905 7.355C8.40925 7.67819 7.89029 8.14922 7.50969 8.72494C7.1291 9.30065 6.89903 9.96266 6.84057 10.6503C6.78211 11.338 6.89713 12.0293 7.17507 12.661C7.45302 13.2927 7.88503 13.8446 8.43151 14.2661C8.978 14.6876 9.62151 14.9652 10.3031 15.0736C10.9847 15.1819 11.6826 15.1176 12.3328 14.8863C12.9831 14.6551 13.5649 14.2644 14.0251 13.75C14.4606 14.3141 15.0611 14.7284 15.743 14.9353C16.425 15.1422 17.1544 15.1315 17.83 14.9047C18.5055 14.6778 19.0936 14.2461 19.5124 13.6695C19.9312 13.0929 20.1599 12.4001 20.1667 11.6875V11C20.1667 9.79626 19.9296 8.60426 19.469 7.49211C19.0083 6.37996 18.3331 5.36943 17.4819 4.51823C16.6307 3.66702 15.6202 2.99181 14.508 2.53114C13.3959 2.07048 12.2039 1.83337 11.0001 1.83337V1.83337ZM11.0001 13.2917C10.5468 13.2917 10.1038 13.1573 9.7269 12.9055C9.35003 12.6537 9.05631 12.2958 8.88285 11.877C8.7094 11.4583 8.66402 10.9975 8.75245 10.553C8.84087 10.1084 9.05913 9.70008 9.37963 9.37959C9.70012 9.05909 10.1085 8.84083 10.553 8.75241C10.9975 8.66398 11.4583 8.70937 11.8771 8.88282C12.2958 9.05627 12.6537 9.35 12.9055 9.72686C13.1573 10.1037 13.2917 10.5468 13.2917 11C13.2917 11.6078 13.0503 12.1907 12.6205 12.6205C12.1908 13.0503 11.6079 13.2917 11.0001 13.2917V13.2917Z"/>
+              </svg>
+            </span>
+          </a>
           <!-- github -->
           <a
             class="inline-flex items-center p-2 mr-1 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner"
             href="https://github.com/portikM"
             target="_blank"
             aria-label="github"
-            rel="noopener"
+            rel="noopener noreferrer"
             @click="$ga.event('Social Media', 'click', 'github')"
           >
             <span class="inline-flex items-center w-8 h-8 ">
@@ -40,7 +67,7 @@
             href="https://dribbble.com/portik"
             target="_blank"
             aria-label="dribbble"
-            rel="noopener"
+            rel="noopener noreferrer"
             @click="$ga.event('Social Media', 'click', 'dribbble')"
           >
             <span class="inline-flex items-center w-8 h-8 ">
@@ -58,7 +85,7 @@
             href="https://www.linkedin.com/in/portik/"
             target="_blank"
             aria-label="linkedin"
-            rel="noopener"
+            rel="noopener noreferrer"
             @click="$ga.event('Social Media', 'click', 'linkedin')"
           >
             <span class="inline-flex items-center w-8 h-8 ">
@@ -76,7 +103,7 @@
             href="https://medium.com/@portik"
             target="_blank"
             aria-label="medium"
-            rel="noopener"
+            rel="noopener noreferrer"
             @click="$ga.event('Social Media', 'click', 'medium')"
           >
             <span class="inline-flex items-center w-8 h-8 ">
@@ -132,7 +159,7 @@
                   class="text-gray-500 border-b border-gray-400 hover:text-gray-600"
                   href="https://stackshare.io/portik/stack"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   @click="$ga.event('Social Media', 'click', 'stackshare')"
                 >
                   my stack</a
