@@ -7,12 +7,12 @@
       <div class="top-0 w-full px-6 py-4 bg-indigo-200 rounded-lg shadow-lg">
         <a
           class="text-sm font-bold text-porti-black banner-link"
-          href="https://savelife.in.ua/en/donate/"
+          href="https://supportukrainenow.org/"
           target="_block"
           rel="noopener noreferrer"
           @click="$ga.event('Banner', 'click')"
         >
-          Russian warship, go f*** yourself!
+          Stand with Ukraine 🇺🇦
         </a>
       </div>
       <div class="relative flex items-center max-w-6xl h-fullpage">
@@ -121,16 +121,10 @@
     <section class="px-12">
       <div class="max-w-3xl pt-10 pb-20 text-lg leading-loose">
         <p>
-          I am a detail-oriented software engineer and UI designer aspiring to
-          be an entrepreneur. While my passion and primary area of focus is
-          designing and building awesome user interfaces, I have extensive
-          skills that go far beyond that.
-        </p>
-        <br />
-        <p>
-          Outside of work I am a music addict who likes outdoor activities,
-          board games and books. My life’s ambition is to travel the world,
-          exploring new cultures and places.
+          I am a software engineer with a passion for UX and a grain of
+          curiosity. Self-starter with an eye for details and a creative
+          approach to problem-solving. Outside of work I am a music addict who
+          likes outdoor activities, board games and books.
         </p>
         <br />
         <p>
@@ -191,7 +185,7 @@
             <div>
               <h3 class="pb-1">The feel</h3>
               <p class="max-w-md text-gray-500">
-                I have a combination of product leader and engineer skills.
+                I have a combination of UI/UX designer and engineer skills.
               </p>
             </div>
           </div>
