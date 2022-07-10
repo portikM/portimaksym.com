@@ -12,7 +12,7 @@
       Home
     </nuxt-link>
     <a
-      v-if="$route.path === '/resume'"
+      v-if="$route.path.includes('/resume')"
       class="fixed top-0 right-0 z-50 inline-flex items-center px-6 py-2 mt-16 mr-8 anchor"
       :href="require('~/static/Maksym_Portianoi_Resume.pdf')"
       target="_blank"
