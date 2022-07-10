@@ -24,13 +24,13 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Hello, my name is Maksym Portianoi. I am software engineer, front-end developer and UI/UX enthusiast from Canada.'
+          'I am a software engineer with a passion for UX and a grain of curiosity'
       },
       {
         hid: 'og:description',
         name: 'og:description',
         content:
-          'Hello, my name is Maksym Portianoi. I am software engineer, front-end developer and UI/UX enthusiast from Canada.'
+          'I am a software engineer with a passion for UX and a grain of curiosity'
       },
       {
         hid: 'og:site_name',
