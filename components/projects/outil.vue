@@ -1,14 +1,11 @@
 <template>
   <div class="flex flex-col w-full max-w-4xl sm:flex-row">
     <div class="w-full h-64 mb-8 rounded-lg shadow-lg sm:mr-8 sm:mb-0 sm:w-2/5">
-      <iframe
-        class="w-full h-full mb-4 rounded-lg"
-        src="https://www.youtube.com/embed/Mf_1jUu-fMQ"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <img
+        src="~/assets/images/outil.png"
+        alt=""
+        class="object-cover w-full h-full mb-4 rounded-lg"
+      />
     </div>
     <div class="flex flex-col justify-center flex-1">
       <div class="flex justify-between mb-4">
