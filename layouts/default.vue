@@ -107,7 +107,7 @@
         <!-- youtube -->
         <a
           class="inline-flex items-center p-2 mr-1 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner"
-          href="#"
+          href="https://www.youtube.com/channel/UCCx10HfwGrtqTZV6hxYIwvA"
           target="_blank"
           aria-label="youtube"
           rel="noopener noreferrer"

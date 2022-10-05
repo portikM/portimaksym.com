@@ -1,14 +1,9 @@
 <template>
   <div class="flex flex-col w-full max-w-4xl sm:flex-row">
-    <div class="w-full h-64 mb-8 rounded-lg shadow-lg sm:mr-8 sm:mb-0 sm:w-2/5">
-      <iframe
-        class="w-full h-full mb-4 rounded-lg"
-        src="https://www.youtube.com/embed/Mf_1jUu-fMQ"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+    <div class="w-full mb-8 rounded-lg shadow-lg sm:mr-8 sm:mb-0 sm:w-2/5">
+      <video class="object-cover h-full rounded-lg md:h-64" controls>
+        <source src="https://portik-portfolio-public.s3.ca-central-1.amazonaws.com/Pandus.mp4" type="video/mp4" />
+      </video>
     </div>
     <div class="flex flex-col justify-center flex-1">
       <div class="flex justify-between mb-4">
@@ -38,7 +33,7 @@
           <ExternalLink class="w-5 h-5 mr-2 stroke-current" />
         </a>
         <a
-          href="#"
+          href="https://dribbble.com/shots/19574888-Pandus-revolutionary-LMS"
           target="_blank"
           aria-label="github"
           rel="noopener noreferrer"
