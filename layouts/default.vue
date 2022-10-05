@@ -104,22 +104,20 @@
               </svg>
           </span>
         </a>
-        <!-- medium -->
+        <!-- youtube -->
         <a
           class="inline-flex items-center p-2 mr-1 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner"
-          href="https://medium.com/@portik"
+          href="https://www.youtube.com/channel/UCCx10HfwGrtqTZV6hxYIwvA"
           target="_blank"
-          aria-label="medium"
+          aria-label="youtube"
           rel="noopener noreferrer"
-          @click="$ga.event('Social Media', 'click', 'medium')"
+          @click="$ga.event('Social Media', 'click', 'youtube')"
         >
           <span class="inline-flex items-center block w-8 h-8">
             <!-- prettier-ignore -->
-            <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto fill-current">
-                <path
-                  d="M3.08001 4.08025C3.11226 3.7728 2.98863 3.46535 2.75212 3.2569L0.327889 0.422095V0H7.86397L13.6907 12.3867L18.8133 0H26V0.422095L23.9252 2.35018C23.7478 2.48046 23.6564 2.69932 23.694 2.91298V17.087C23.6564 17.3007 23.7478 17.5195 23.9252 17.6498L25.9516 19.5779V20H15.7548V19.5779L17.8565 17.6029C18.0608 17.4049 18.0608 17.3424 18.0608 17.0401V5.58624L12.2179 19.9635H11.4277L4.63345 5.58624V15.2215C4.57432 15.6279 4.71408 16.0344 5.00972 16.3262L7.74034 19.5362V19.9583H0V19.5414L2.73062 16.3262C3.02088 16.0344 3.15526 15.6227 3.08001 15.2215V4.08025Z"
-                />
-              </svg>
+            <svg role="img" width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="mx-auto fill-current">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
           </span>
         </a>
       </div>
@@ -128,6 +126,10 @@
 </template>
 
 <style lang="scss">
+.swipe-leftr-slide {
+  height: auto !important;
+}
+
 @font-face {
   font-family: 'Circular Std';
   src: url('~assets/fonts/CircularStd-Book.eot'),
@@ -278,6 +280,10 @@ h3 {
   @apply text-xl text-porti-black font-bold;
 }
 
+h4 {
+  @apply text-lg text-porti-black font-bold;
+}
+
 .banner-link {
   &:hover {
     @apply border-b border-porti-black;
@@ -309,31 +315,53 @@ h3 {
   }
 }
 
-// swipe
+// swipe left/right
 
-.swipe-enter-active,
-.swipe-leave-active {
+.swipe-left-enter-active,
+.swipe-left-leave-active,
+.swipe-right-enter-active,
+.swipe-right-leave-active {
   @apply transition ease-out duration-200;
   overflow: hidden !important;
 }
 
-.swipe-enter {
-  @apply transform opacity-0 translate-x-20;
+.swipe-left-enter,
+.swipe-right-enter {
+  @apply transform opacity-0;
   transition-delay: 100ms;
 }
 
-.swipe-enter-to {
+.swipe-left-enter {
+  @apply translate-x-20;
+}
+
+.swipe-right-enter {
+  @apply -translate-x-20;
+}
+
+.swipe-left-enter-to,
+.swipe-right-enter-to {
   @apply transform opacity-100 translate-x-0;
   transition-delay: 100ms;
 }
 
-.swipe-leave {
+.swipe-left-leave,
+.swipe-right-leave {
   @apply transform opacity-100 translate-x-0;
   transition-delay: 100ms;
 }
 
-.swipe-leave-to {
-  @apply transform opacity-0 -translate-x-20;
+.swipe-left-leave-to,
+.swipe-right-leave-to {
+  @apply transform opacity-0;
   transition-delay: 100ms;
+}
+
+.swipe-left-leave-to {
+  @apply -translate-x-20;
+}
+
+.swipe-right-leave-to {
+  @apply translate-x-20;
 }
 </style>
