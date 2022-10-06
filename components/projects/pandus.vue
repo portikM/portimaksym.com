@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col w-full max-w-4xl sm:flex-row">
-    <div class="w-full mb-8 rounded-lg shadow-lg sm:mr-8 sm:mb-0 sm:w-2/5">
-      <video class="object-cover h-full rounded-lg md:h-64" controls>
+    <div class="w-full mb-8 sm:mr-8 sm:mb-0 sm:w-2/5">
+      <video class="object-cover w-full h-64 rounded-lg shadow-lg" controls>
         <source src="https://portik-portfolio-public.s3.ca-central-1.amazonaws.com/Pandus.mp4" type="video/mp4" />
       </video>
     </div>
