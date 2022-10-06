@@ -178,7 +178,7 @@ export default {
   mounted() {
     if (this.autoSwipe) {
       this.swipeInterval = setInterval(() => {
-        this.swipeRight(false)
+        this.swipeLeft(false)
       }, 5000)
     }
   },
@@ -189,12 +189,12 @@ export default {
         this.$ga.event('Portfolio - Expand', 'click', project)
       }
     },
-    swipeLeft() {
+    swipeRight() {
       this.autoSwipe = false
       this.swipeAnimationName = 'swipe-left'
       this.swipeHandler('left')
     },
-    swipeRight(userAction = true) {
+    swipeLeft(userAction = true) {
       if (userAction) {
         this.autoSwipe = false
       }
