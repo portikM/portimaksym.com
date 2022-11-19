@@ -3,7 +3,7 @@
     <div class="w-full h-64 mb-8 rounded-lg shadow-lg sm:mr-8 sm:mb-0 sm:w-2/5">
       <img
         src="~/assets/images/illustrapi.png"
-        alt=""
+        alt="Illustrapi site design"
         class="object-cover w-full h-full mb-4 rounded-lg"
       />
     </div>
