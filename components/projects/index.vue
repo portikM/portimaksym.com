@@ -28,8 +28,9 @@
               <div class="w-full h-full mb-4 rounded-lg shadow-lg">
                 <img
                   src="~/assets/images/pandus.png"
-                  alt=""
+                  alt="Pandus logo thumbnail"
                   class="object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
               <div class="flex justify-between px-4">
@@ -59,8 +60,9 @@
               <div class="w-full h-full mb-4 rounded-lg shadow-lg">
                 <img
                   src="~/assets/images/outil.png"
-                  alt=""
+                  alt="Outil UI design thumbnail"
                   class="object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
               <div class="flex justify-between px-4">
@@ -97,8 +99,9 @@
               <div class="w-full h-full mb-4 rounded-lg shadow-lg">
                 <img
                   src="~/assets/images/illustrapi.png"
-                  alt=""
+                  alt="Illustrapi site design thumbnail"
                   class="object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
               <div class="flex justify-between px-4">

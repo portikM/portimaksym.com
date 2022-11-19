@@ -24,9 +24,12 @@
         <img
           class="absolute right-0 z-10 w-3/4 sm:w-1/2 md:w-1/3 md:static"
           :src="flyingDude"
-          alt="Flying Dude Picture"
+          alt=""
         />
-        <div class="absolute bottom-0 inline-flex mb-32">
+        <div
+          :class="{ 'mb-32': !isMobileLandscape }"
+          class="absolute bottom-0 inline-flex"
+        >
           <!-- email -->
           <a
             class="inline-flex items-center p-2 mr-1 rounded-full hover:shadow-inner focus:outline-none focus:shadow-inner"
@@ -265,6 +268,11 @@ export default {
       gearIcon,
       eyeIcon,
       bookIcon
+    }
+  },
+  computed: {
+    isMobileLandscape() {
+      return this.$screen.landscape && this.$screen.touch
     }
   }
 }
