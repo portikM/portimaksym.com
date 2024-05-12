@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import Link from '~/components/SocialMediaLinks/Link.vue'
+import Link from './Link.vue'
 import Email from '~/assets/icons/email.svg'
 import GitHub from '~/assets/icons/github.svg'
 import LinkedIn from '~/assets/icons/linkedin.svg'

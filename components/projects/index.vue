@@ -76,9 +76,9 @@
 </template>
 
 <script setup>
-import { ref, watch, onMounted } from 'vue'
-import Pandus from '~/components/projects/pandus'
-import Outil from '~/components/projects/outil'
+import { ref } from 'vue'
+import Pandus from './Pandus.vue'
+import Outil from './Outil.vue'
 import Firebase from '~/assets/icons/firebase.svg'
 import Typescript from '~/assets/icons/typescript.svg'
 import AWS from '~/assets/icons/aws.svg'
