@@ -27,7 +27,7 @@
                 loading="lazy" />
             </div>
             <div class="flex justify-between px-4">
-              <h4>Pandus</h4>
+              <span class="text-lg text-porti-black font-bold">Pandus</span>
               <div class="inline-flex items-center">
                 <Firebase class="w-4 h-4 mr-2 text-gray-500 fill-current stack-icon" />
                 <NuxtJS class="w-4 h-4 mr-2 text-gray-500 fill-current stack-icon" />
@@ -51,7 +51,7 @@
                 loading="lazy" />
             </div>
             <div class="flex justify-between px-4">
-              <h4>Outil</h4>
+              <span class="text-lg text-porti-black font-bold">Outil</span>
               <div class="inline-flex items-center">
                 <Typescript class="w-4 h-4 mr-2 text-gray-500 fill-current stack-icon" />
                 <AWS class="w-4 h-4 mr-2 text-gray-500 fill-current stack-icon" />
@@ -133,7 +133,7 @@ const swipeHandler = (direction) => {
   }
 
   .active.group-content {
-    h4 {
+    span {
       @apply text-white;
     }
 

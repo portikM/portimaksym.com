@@ -102,7 +102,7 @@
         </div>
       </div>
     </section>
-    <section class="px-12 pb-8">
+    <section class="px-12">
       <h2 class="text-center lg:text-left">Relevant projects</h2>
       <Projects />
     </section>

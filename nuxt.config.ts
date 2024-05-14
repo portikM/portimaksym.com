@@ -55,7 +55,7 @@ export default defineNuxtConfig({
           name: 'twitter:image',
           content: 'https://portimaksym.com/og_image.png'
         }
-      ],      
+      ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'canonical', href: 'https://portimaksym.com' }
@@ -63,7 +63,10 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  css: ['~/assets/styles/main.css'],
+  css: [
+    '~/assets/styles/main.css',
+    '~/assets/styles/styles.scss'
+  ],
   typescript: {
     typeCheck: true
   },
@@ -71,8 +74,9 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-svgo',
     'nuxt-gtag',
+    '@nuxt/content'
   ],
   gtag: {
     id: 'G-F434T4Q2TC'
-  }
+  },
 })
