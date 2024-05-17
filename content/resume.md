@@ -9,10 +9,11 @@ Toronto, Canada
 ### Software engineer @ Kong
 January 2023 - Present, Toronto
 
-As an engineer focused on UI and UX, I play a key role in enhancing our cloud platform at Kong. My notable accomplishments include:
-* Led a major refactoring of our open-source UI components library, implementing design system standards and best practices to ensure consistent and reusable components across different projects
-* Developed a custom linting plugin to maintain high code quality standards, significantly improving the codebase's maintainability
-* Played an instrumental role in the successful rollout of a major new feature that broadens our product's capabilities. As the primary front-end developer, I ensured the timely launch of a viable initial product
+As a dedicated software engineer at Kong, I have taken on significant responsibilities and demonstrated leadership in key projects. Here are some highlights of my contributions:
+* **Led design system project:** spearheaded the development and implementation of Kong’s new design system, focusing on the comprehensive Kongponents (Kong’s open-source UI components library) reskin. This role involved enhancing developer experience, improving E2E test reliability, and ensuring seamless design-to-engineering transitions by aligning Kongponents with Figma components
+* **Project ownership and leadership:** acted as the main front-end engineer for the Cloud Gateways feature, implemented the MVP flow for configuring cloud clusters in Konnect. Demonstrated strong leadership and project management skills, delivering high-quality work showcased in API Summit demo
+* **Subject-matter expertise:** established myself as the go-to expert on Kongponents, design system-related questions, and CSS. Successfully handled Kongponents reskin, adoption across all Konnect repositories, and collaborated with multiple teams to address related issues and improvements
+* **Proactive problem solver:** consistently identified and executed improvement opportunities, supported team members, and fulfilled on-call engineering duties effectively
 
 ### Software developer @ Acuity Insights
 November 2021 - Present, Toronto
