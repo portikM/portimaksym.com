@@ -7,7 +7,7 @@
     </div>
     <div class="flex flex-col justify-center flex-1">
       <div class="flex justify-between mb-4">
-        <h2>Pandus</h2>
+        <h3>Pandus</h3>
         <div class="inline-flex items-center">
           <Firebase class="w-5 h-5 mr-2 text-gray-500 fill-current" />
           <NuxtJS class="w-5 h-5 mr-2 text-gray-500 fill-current" />

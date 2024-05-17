@@ -5,7 +5,7 @@
     </div>
     <div class="flex flex-col justify-center flex-1">
       <div class="flex justify-between mb-4">
-        <h2>Outil</h2>
+        <h3>Outil</h3>
         <div class="inline-flex items-center">
           <Typescript class="w-5 h-5 mr-2 text-gray-500 fill-current" />
           <AWS class="w-5 h-5 mr-2 text-gray-500 fill-current" />
