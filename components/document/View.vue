@@ -11,8 +11,16 @@
 
 <style lang="scss">
 .document {
-  h1, h2, h3, h4, h5, h6, ul {
+  h1 {
+    @apply mb-6;
+  }
+
+  h2, ul {
     @apply mb-4;
+  }
+
+  h3, h4 {
+    @apply mb-2;
   }
 
   p {
@@ -21,6 +29,19 @@
 
   ul {
     @apply list-disc pl-5;
+  }
+
+  pre {
+    @apply p-2 bg-gray-700 rounded-lg shadow-md mb-4;
+
+    code {
+      span.line {
+        &::before {
+          @apply text-gray-400 mr-3;
+          content: attr(line);
+        }
+      }
+    }
   }
 }
 </style>
