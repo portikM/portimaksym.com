@@ -1,8 +1,8 @@
 <template>
-  <nav v-if="headings.length" class="border-l border-gray-300 h-fit pl-5 py-2">
+  <nav v-if="headers.length" class="border-l border-gray-300 h-fit pl-5 py-2">
     <span class="font-bold block mb-2">On this page</span>
     <ul>
-      <li v-for="heading in headings" :key="`${heading.props.id}-nav-item`" class="mb-2 max-w-64 truncate" :class="getItemOffsetClass(heading.tag)">
+      <li v-for="heading in headers" :key="`${heading.props.id}-nav-item`" class="mb-2 max-w-64 truncate" :class="getItemOffsetClass(heading.tag)">
         <nuxt-link :to="`#${heading.props.id}`" class="text-gray-600 hover:text-gray-700 p-1 rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-pink-500">
           {{ heading.children[0].value }}
         </nuxt-link>
@@ -19,11 +19,35 @@ const props = defineProps({
   },
 })
 
-let headings = []
+const filterHeaders = (nodes) => {
+  // Define the tags to filter
+  const headerTags = ['h2', 'h3', 'h4', 'h5', 'h6']
+
+  // Function to recursively find and collect header elements
+  const findHeaders = (elements, headers) => {
+    elements.forEach(element => {
+      if (element.type === 'element') {
+        if (headerTags.includes(element.tag)) {
+          headers.push(element)
+        }
+
+        if (element.children) {
+          findHeaders(element.children, headers)
+        }
+      }
+    })
+  }
+
+  const headers = []
+  findHeaders(nodes, headers)
+  return headers
+}
+
+let headers = []
 
 const _nodes = JSON.parse(JSON.stringify(props.nodes))
 
-headings = _nodes.filter(node => ['h2', 'h3', 'h4', 'h5', 'h6'].includes(node.tag)) // filter out only headings of levels 2-6
+headers = filterHeaders(_nodes)
 
 const getItemOffsetClass = (tag) => {
   switch (tag) {

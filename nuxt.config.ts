@@ -79,4 +79,9 @@ export default defineNuxtConfig({
   gtag: {
     id: 'G-F434T4Q2TC'
   },
+  content: {
+    highlight: {
+      theme: 'github-dark',
+    }
+  }
 })
