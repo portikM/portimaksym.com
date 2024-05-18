@@ -16,13 +16,13 @@ Toronto, Canada
     As a dedicated software engineer at Kong, I have taken on significant responsibilities and demonstrated leadership in key projects. Here are some highlights of my contributions:
     * **Led design system project:** spearheaded the development and implementation of Kong’s new design system, focusing on the comprehensive Kongponents (Kong’s open-source UI components library) reskin. This role involved enhancing developer experience, improving E2E test reliability, and ensuring seamless design-to-engineering transitions by aligning Kongponents with Figma components
     * **Project ownership and leadership:** acted as the main front-end engineer for the Cloud Gateways feature, implemented the MVP flow for configuring cloud clusters in Konnect. Demonstrated strong leadership and project management skills, delivering high-quality work showcased in API Summit demo
-    * **Subject-matter expertise:** established myself as the go-to expert on Kongponents, design system-related questions, and CSS. Successfully handled Kongponents reskin, adoption across all Konnect repositories, and collaborated with multiple teams to address related issues and improvements
+    * **Subject-matter expertise:** established myself as the go-to expert on Kongponents, design system-related questions, and CSS. Successfully handled Kongponents reskin, adoption across all Konnect microfrontends and collaborated with multiple teams to address related issues and improvements
     * **Proactive problem solver:** consistently identified and executed improvement opportunities, supported team members, and fulfilled on-call engineering duties effectively
   ::
 
   ::wrapper{classNames="mb-6"}
     ### Software developer @ Acuity Insights
-    November 2021 - Present, Toronto
+    November 2021 - December 2022, Remote
 
     At Acuity Insights, I contributed to both front-end and back-end development with a focus on system optimization and codebase improvement. Key accomplishments include:
     * Spearheaded the improvement of system monitoring, conducting in-depth metric analysis during various load conditions to implement alert systems. This allowed the team to transition from an active monitoring model to an on-call system during high-demand hours
