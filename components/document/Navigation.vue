@@ -1,9 +1,9 @@
 <template>
-  <nav v-if="headers.length" class="border-l border-gray-300 h-fit pl-5 py-2">
-    <span class="font-bold block mb-2">On this page</span>
+  <nav v-if="headers.length" class="border-l border-gray-300 h-fit pl-4 py-2">
+    <span class="font-bold block mb-1.5 ml-2">On this page</span>
     <ul>
-      <li v-for="heading in headers" :key="`${heading.props.id}-nav-item`" class="mb-2 max-w-64 truncate" :class="getItemOffsetClass(heading.tag)">
-        <nuxt-link :to="`#${heading.props.id}`" class="text-gray-600 hover:text-gray-700 p-1 rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-pink-500">
+      <li v-for="heading in headers" :key="`${heading.props.id}-nav-item`" class="p-1.5 mb-1 max-w-64 truncate" :class="getItemOffsetClass(heading.tag)">
+        <nuxt-link :to="`#${heading.props.id}`" class="text-gray-600 hover:text-gray-700 p-0.5 rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-pink-500">
           {{ heading.children[0].value }}
         </nuxt-link>
       </li>

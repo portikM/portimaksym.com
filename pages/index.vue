@@ -1,6 +1,6 @@
 <template>
-  <div class="relative">
-    <section class="px-12 pt-10" style="background: linear-gradient(to bottom, #EDF2F7, white);">
+  <div class="container mx-auto px-2">
+    <section class="pt-10">
       <div class="top-0 w-full px-6 py-4 bg-indigo-200 rounded-lg shadow-lg">
         <a class="text-sm font-bold text-porti-black banner-link outline-none" href="https://savelife.in.ua/en/donate-en/#donate-army-card-monthly" target="_block"
           rel="noopener">
@@ -13,13 +13,12 @@
           <br />
           Maksym Portianoi
         </h1>
-        <img class="absolute right-0 z-10 w-3/4 sm:w-1/2 md:w-1/3 md:static" :src="flyingDude" alt="" />
         <div class="absolute bottom-12 inline-flex">
           <SocialMediaLinks />
         </div>
       </div>
     </section>
-    <section class="px-12">
+    <section>
       <div class="max-w-3xl pt-10 pb-20 text-lg leading-loose">
         <p>
           I am a software engineer with a passion for UX and a grain of
@@ -102,7 +101,7 @@
         </div>
       </div>
     </section>
-    <section class="px-12">
+    <section>
       <h2 class="text-center lg:text-left">Relevant projects</h2>
       <Projects />
     </section>
@@ -110,8 +109,6 @@
 </template>
 
 <script setup>
-import flyingDude from '/images/flying_dude.png'
-
 useHead({
   titleTemplate: () => 'Maksym Portianoi',
 })

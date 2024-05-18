@@ -6,7 +6,8 @@
         &#8592; Back to home
       </nuxt-link>
       <nuxt-link to="/Maksym_Portianoi_Resume.pdf" external target="_blank"
-        class="text-gray-500 hover:text-gray-600 text-sm px-2 py-1 rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-pink-500">
+        class="flex gap-2 items-center text-gray-500 hover:text-gray-600 text-sm px-2 py-1 rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-pink-500">
+        <Download filled class="stroke-current" />
         Download PDF
       </nuxt-link>
     </div>
@@ -16,3 +17,7 @@
     <Footer :show-resume-link="false" />
   </main>
 </template>
+
+<script setup>
+import Download from '~/assets/icons/download.svg'
+</script>
