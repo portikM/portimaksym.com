@@ -8,18 +8,18 @@
         </a>
       </div>
       <div class="relative flex items-center max-w-6xl h-fullpage">
-        <h1 class="z-20 pr-2 text-3xl sm:text-4xl md:text-5xl">
+        <h1 class="-mt-20 pr-2 text-3xl sm:text-4xl md:text-5xl">
           Hello, my name is
           <br />
           Maksym Portianoi
         </h1>
-        <div class="absolute bottom-12 inline-flex">
+        <div class="absolute bottom-40 sm:bottom-12 inline-flex">
           <SocialMediaLinks />
         </div>
       </div>
     </section>
     <section>
-      <div class="max-w-3xl pt-10 pb-20 text-lg leading-loose">
+      <div class="max-w-3xl sm:pt-10 pb-20 text-lg leading-loose">
         <p>
           I am a software engineer with a passion for UX and a grain of
           curiosity. Self-starter with an eye for details and a creative
