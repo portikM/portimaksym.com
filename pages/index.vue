@@ -19,7 +19,7 @@
       </div>
     </section>
     <section>
-      <div class="max-w-3xl sm:pt-10 pb-20 text-lg leading-loose">
+      <div class="max-w-3xl sm:pt-10 pb-10 text-lg leading-loose">
         <p>
           I am a software engineer with a passion for UX and a grain of
           curiosity. Self-starter with an eye for details and a creative
@@ -28,11 +28,29 @@
         </p>
         <br />
         <p>
-          I was born and raised in Ukraine 🇺🇦 and I currently reside in Toronto,
+          I was born and raised in Ukraine 🇺🇦 and I currently live in Toronto,
           Canada.
         </p>
       </div>
-      <div class="grid max-w-5xl grid-cols-1 gap-10 pb-10 text-lg lg:grid-cols-2">
+      <div class="grid grid-cols-2 md:flex pt-10 pb-10 px-2 gap-5 md:gap-7 sm:w-[108%] md:-translate-x-[4%] justify-between">
+        <div class="w-36 h-36 sm:w-48 sm:h-48 md:w-48 md:h-56 xl:w-56 xl:h-64 place-self-center sm:place-self-start rounded-lg shadow-lg -rotate-2 shrink-0">
+          <img src="/images/featured_photo_1.jpg" alt="Portrait photo of me" class="w-full h-full object-cover object-top rounded-lg" loading="lazy" />
+        </div>
+        <div class="w-36 h-36 sm:w-48 sm:h-48 md:w-48 md:h-56 xl:w-56 xl:h-64 place-self-center sm:place-self-start rounded-lg shadow-lg rotate-1 shrink-0">
+          <img src="/images/featured_photo_2.jpg" alt="Photo of me and my wife Yuliia on the top of the mountain in Banff, Alberta" class="w-full h-full object-cover rounded-lg" loading="lazy" />
+        </div>
+        <div class="w-36 h-36 sm:w-48 sm:h-48 md:w-48 md:h-56 xl:w-56 xl:h-64 place-self-center sm:place-self-start rounded-lg shadow-lg rotate-2 shrink-0">
+          <img src="/images/featured_photo_3.jpg" alt="Photo of our dog Kiwi" class="w-full h-full object-cover rounded-lg" loading="lazy" />
+        </div>
+        <div class="w-36 h-36 sm:w-48 sm:h-48 md:w-48 md:h-56 xl:w-56 xl:h-64 place-self-center sm:place-self-start rounded-lg shadow-lg shrink-0">
+          <img src="/images/featured_photo_4.jpg" alt="Cool photo of me" class="w-full h-full object-cover rounded-lg" loading="lazy" />
+        </div>
+        <!-- hidden on < lg -->
+        <div class="w-48 h-56 xl:w-56 xl:h-64 rounded-lg shadow-lg rotate-2 shrink-0 hidden lg:block">
+          <img src="/images/featured_photo_5.jpg" alt="Photo of me with friends on a camping trip" class="w-full h-full object-cover rounded-lg" loading="lazy" />
+        </div>
+      </div>
+      <div class="grid max-w-5xl grid-cols-1 gap-10 pt-10 pb-10 text-lg lg:grid-cols-2">
         <div>
           <h2 class="pb-12 text-center sm:text-left">Main skills</h2>
           <!-- code -->
