@@ -1,5 +1,5 @@
 <template>
-  <ContentDoc v-slot="{ doc }">
+  <ContentDoc v-slot="{ doc }" :path="path || $route.path">
     <div class="flex gap-5">
       <article>
         <ContentRenderer :value="doc" class="document" />
@@ -8,6 +8,15 @@
     </div>
   </ContentDoc>
 </template>
+
+<script setup>
+defineProps({
+  path: {
+    type: String,
+    default: ''
+  }
+})
+</script>
 
 <style lang="scss">
 .document {
