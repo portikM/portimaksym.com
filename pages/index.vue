@@ -130,4 +130,8 @@
 useHead({
   titleTemplate: () => 'Maksym Portianoi',
 })
+
+definePageMeta({
+  layout: 'landing'
+})
 </script>

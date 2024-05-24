@@ -10,7 +10,7 @@
       <LinkedIn />
     </Link>
     <nuxt-link v-if="showResumeLink" to="/resume" class="flex items-center justify-center h-10 p-2 rounded-full text-porti-black hover:text-gray-700 outline-none focus-visible:ring-2 focus-visible:ring-pink-500 text-md font-bold">
-      Resume
+      CV
     </nuxt-link>
   </div>
 </template>
