@@ -5,3 +5,5 @@ published: May 24, 2024
 image: kong_design_system_banner.png
 index: 0
 ---
+
+# Things I learned while building design system at Kong

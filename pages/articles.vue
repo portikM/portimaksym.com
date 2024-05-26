@@ -3,7 +3,7 @@
     <nuxt-link to="/" class="text-gray-500 hover:text-gray-600 text-sm px-2 py-1 rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-pink-500">
       &#8592; Back to home
     </nuxt-link>
-    <div class="mt-4">
+    <div class="mt-8">
       <!-- TODO: unignore once the article is ready -->
       <ArticlesNav ignore="building-design-system-at-kong" />
     </div>

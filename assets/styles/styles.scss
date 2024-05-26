@@ -149,3 +149,23 @@ article {
 .swipe-right-leave-to {
   @apply translate-x-20;
 }
+
+// slide up
+
+@keyframes slide-up-animation {
+  0% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.slide-up-enter-active {
+  animation: slide-up-animation 0.2s ease-in-out;
+}
+
+.slide-up-leave-active {
+  animation: slide-up-animation 0.2s ease-in-out reverse;
+}

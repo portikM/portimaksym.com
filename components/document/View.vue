@@ -1,5 +1,5 @@
 <template>
-  <ContentDoc v-slot="{ doc }" :path="path || $route.path">
+  <ContentDoc v-slot="{ doc }" :path="article ? `articles${$route.path}` : $route.path">
     <div class="flex gap-5">
       <article>
         <ContentRenderer :value="doc" class="document" />
@@ -11,9 +11,9 @@
 
 <script setup>
 defineProps({
-  path: {
-    type: String,
-    default: ''
+  article: {
+    type: Boolean,
+    default: false
   }
 })
 </script>
