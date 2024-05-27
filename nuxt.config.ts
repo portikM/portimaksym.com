@@ -74,7 +74,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-svgo',
     'nuxt-gtag',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@vueuse/nuxt'
   ],
   gtag: {
     id: 'G-F434T4Q2TC'
