@@ -21,7 +21,7 @@ const { data } = await useAsyncData(`articles${route.path}`, () =>
   .findOne()
 )
 
-const { title, description, about: articleAbout } = data.value
+const { title, description, about: articleAbout, image } = data.value
 
 useHead({
   titleTemplate: () => title,
@@ -42,6 +42,11 @@ useHead({
       content: description
     },
     {
+      hid: 'og:image',
+      name: 'og:image',
+      content: `https://deploy-preview-59--eager-bell-6c810e.netlify.app/images/${image}` // `https://portimaksym.com/images/${image}`
+    },
+    {
       hid: 'twitter:title',
       name: 'twitter:title',
       content: title
@@ -51,6 +56,11 @@ useHead({
       name: 'twitter:description',
       content: description
     },
+    {
+      hid: 'twitter:image',
+      name: 'twitter:image',
+      content: `https://deploy-preview-59--eager-bell-6c810e.netlify.app/images/${image}` // `https://portimaksym.com/images/${image}`
+    }
   ]
 })
 </script>
