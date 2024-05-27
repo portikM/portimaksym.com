@@ -7,30 +7,49 @@
     <div class="mt-4">
       <slot />
     </div>
-    <ArticleLike />
+    <ArticleLike :article-about="articleAbout" />
     <Footer />
   </main>
 </template>
 
 <script setup>
+const route = useRoute()
+
+const { data } = await useAsyncData(`articles${route.path}`, () => 
+  queryContent('articles')
+  .where({ _path: { $eq: `/articles${route.path}` } })
+  .findOne()
+)
+
+const { title, description, about: articleAbout } = data.value
+
 useHead({
-  // TODO: fetch article data dynamically
-  titleTemplate: () => 'Things I learned while building design system at Kong',
+  titleTemplate: () => title,
   meta: [
     {
       hid: 'description',
       name: 'description',
-      content: 'I refactored our entire open-source UI component library. Here are a few lessons I learned.'
+      content: description
+    },
+    {
+      hid: 'og:title',
+      name: 'og:title',
+      content: title
     },
     {
       hid: 'og:description',
       name: 'og:description',
-      content: 'I refactored our entire open-source UI component library. Here are a few lessons I learned.'
+      content: description
+    },
+    {
+      hid: 'twitter:title',
+      name: 'twitter:title',
+      content: title
     },
     {
       hid: 'twitter:description',
       name: 'twitter:description',
-      content: 'I refactored our entire open-source UI component library. Here are a few lessons I learned.'
+      content: description
     },
   ]
 })

@@ -2,12 +2,12 @@
   <div class="p-[1.35rem] rounded-lg shadow-lg bg-pink-50 flex flex-col lg:flex-row gap-2 items-center justify-center border-2 border-pink-300 mt-10">
     If you enjoyed reading this article, please consider
     <button class="font-bold flex gap-2 items-center px-2 py-1 rounded-lg hover:text-gray-600 outline-none focus-visible:ring-2 focus-visible:ring-pink-500 border border-pink-300 border-dashed relative" :class="{ 'text-gray-500 pointer-events-none': likedArticle }" :disabled="likedArticle" @click="onLike">
-      <Heart class="text-pink-500" :class="{ '!text-pink-300': likedArticle }" />
+      <Heart :filled="!likedArticle" class="stroke-current text-pink-500" :class="{ '!text-pink-300': likedArticle }" />
       liking
       <span class="absolute -top-4 -left-5 -rotate-6">
         <Transition name="slide-up">
           <span v-if="likedArticle" class="flex items-center gap-1 font-normal text-xs text-pink-500 whitespace-nowrap">
-            <Check filled class="stroke-current" /> Thank you!
+            Thank you!
           </span>
         </Transition>
       </span>
@@ -30,11 +30,17 @@
 
 <script setup>
 import Heart from '~/assets/icons/heart.svg'
-import Check from '~/assets/icons/check.svg'
 import { useClipboard } from '@vueuse/core'
 
+const props = defineProps({
+  articleAbout: {
+    type: String,
+    default: ''
+  }
+})
+
 const route = useRoute()
-const copyText = `I just finished reading this cool article:\nhttps://portimaksym.com${route.path}`
+const copyText = `I just finished reading this cool article${props.articleAbout ? ' about ' + props.articleAbout : ''} (3-5 min read):\nhttps://portimaksym.com${route.path}`
 
 const { isSupported, copy } = useClipboard({ copyText })
 
@@ -52,7 +58,7 @@ const onLike = () => {
   justLikedArticle.value = true
 
   likeArticle()
-  // TODO: ga event
+  useTrackEvent('like', { article: articleSlug })
 }
 
 const likeArticle = () => {
@@ -69,7 +75,7 @@ const onShare = () => {
   copy(copyText)
 
   displayClipboardMessage.value = true
-  // TODO: ga event
+  useTrackEvent('share', { article: articleSlug })
 }
 
 const getLikedArticles = () => {
