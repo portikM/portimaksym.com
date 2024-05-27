@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/36fca1f9-c072-4229-bfee-afebf0d5c8d5/deploy-status)](https://app.netlify.com/sites/eager-bell-6c810e/deploys)
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
