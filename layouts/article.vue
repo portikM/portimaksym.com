@@ -15,53 +15,58 @@
 <script setup>
 const route = useRoute()
 
+const articleAbout = ref('')
+
 const { data } = await useAsyncData(`articles${route.path}`, () => 
   queryContent('articles')
   .where({ _path: { $eq: `/articles${route.path}` } })
-  .findOne()
-)
+  .findOne())
 
-const { title, description, about: articleAbout, image } = data.value
+if (data.value) {
+  const { title, description, about, image } = data.value
 
-useHead({
-  titleTemplate: () => title,
-  meta: [
-    {
-      hid: 'description',
-      name: 'description',
-      content: description
-    },
-    {
-      hid: 'og:title',
-      name: 'og:title',
-      content: title
-    },
-    {
-      hid: 'og:description',
-      name: 'og:description',
-      content: description
-    },
-    {
-      hid: 'og:image',
-      name: 'og:image',
-      content: `https://deploy-preview-59--eager-bell-6c810e.netlify.app/images/${image}` // `https://portimaksym.com/images/${image}`
-    },
-    {
-      hid: 'twitter:title',
-      name: 'twitter:title',
-      content: title
-    },
-    {
-      hid: 'twitter:description',
-      name: 'twitter:description',
-      content: description
-    },
-    {
-      hid: 'twitter:image',
-      name: 'twitter:image',
-      content: `https://deploy-preview-59--eager-bell-6c810e.netlify.app/images/${image}` // `https://portimaksym.com/images/${image}`
-    }
-  ]
-})
+  articleAbout.value = about
+  
+  useHead({
+    titleTemplate: () => title,
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: description
+      },
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: title
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content: description
+      },
+      {
+        hid: 'og:image',
+        name: 'og:image',
+        content: `https://portimaksym.com/images/${image}`
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: title
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: description
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: `https://portimaksym.com/images/${image}`
+      }
+    ]
+  })
+}
 </script>
  

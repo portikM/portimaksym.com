@@ -1,5 +1,5 @@
 <template>
-  <div class="p-[1.35rem] rounded-lg shadow-lg bg-pink-50 flex flex-col lg:flex-row gap-2 items-center justify-center border-2 border-pink-300 mt-10">
+  <div class="p-[1.35rem] rounded-lg shadow-lg bg-pink-50 flex flex-col lg:flex-row gap-2 items-center justify-center border-2 border-pink-300 mt-8">
     If you enjoyed reading this article, please consider
     <button class="font-bold flex gap-2 items-center px-2 py-1 rounded-lg hover:text-gray-600 outline-none focus-visible:ring-2 focus-visible:ring-pink-500 border border-pink-300 border-dashed relative" :class="{ 'text-gray-500 pointer-events-none': likedArticle }" :disabled="likedArticle" @click="onLike">
       <Heart :filled="!likedArticle" class="stroke-current text-pink-500" :class="{ '!text-pink-300': likedArticle }" />

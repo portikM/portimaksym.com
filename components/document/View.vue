@@ -1,7 +1,7 @@
 <template>
   <ContentDoc v-slot="{ doc }" :path="article ? `articles${$route.path}` : $route.path">
     <div class="flex gap-5">
-      <article>
+      <article class="w-full">
         <ContentRenderer :value="doc" class="document" />
       </article>
       <DocumentNavigation :nodes="doc?.body?.children" class="mt-8 hidden md:block" />

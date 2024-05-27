@@ -1,8 +1,5 @@
 <template>
-  <div v-if="!articles.length">
-    <p class="text-gray-500">Nothing here yet, sorry 🤷‍♂️</p>
-  </div>
-  <div v-else>
+  <div v-if="articles && articles.length">
     <nav>
       <ul class="flex flex-col gap-10">
         <li v-for="article in articles" :key="article.slug">
@@ -19,6 +16,9 @@
         </li>
       </ul>
     </nav>
+  </div>
+  <div v-else>
+    <p class="text-gray-500">Nothing here yet, sorry 🤷‍♂️</p>
   </div>
 </template>
 
@@ -45,14 +45,15 @@ const { data } = await useAsyncData('articles', () =>
   .where({ _path: props.ignore ? { $and: [ ignoreReadmeClause, { $not: `/articles/${props.ignore}` } ] } : ignoreReadmeClause })
   .sort({ index: -1, $numeric: true })
   .limit(props.limit)
-  .find()
-)
+  .find())
 
-const articles = data.value.map(entry => ({
-  title: entry.title,
-  description: entry.description,
-  published: entry.published,
-  slug: entry._path.replace('/articles/', ''),
-  image: entry.image,
-}))
+if (data.value) {
+  const articles = data.value.map(entry => ({
+    title: entry.title,
+    description: entry.description,
+    published: entry.published,
+    slug: entry._path.replace('/articles/', ''),
+    image: entry.image,
+  }))
+}
 </script>
