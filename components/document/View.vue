@@ -52,5 +52,14 @@ defineProps({
       }
     }
   }
+
+  a {
+    @apply text-pink-600 hover:text-pink-700 rounded-lg px-0.5 outline-none focus-visible:ring-2 focus-visible:ring-pink-500;
+
+    &[target="_blank"]::after {
+      @apply ml-1 text-sm text-pink-500;
+      content: '↗';
+    }
+  }
 }
 </style>

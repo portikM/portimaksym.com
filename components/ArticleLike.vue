@@ -58,7 +58,7 @@ const onLike = () => {
   justLikedArticle.value = true
 
   likeArticle()
-  useTrackEvent('like', { article: articleSlug })
+  useTrackEvent('like', { value: articleSlug })
 }
 
 const likeArticle = () => {
@@ -75,7 +75,7 @@ const onShare = () => {
   copy(copyText)
 
   displayClipboardMessage.value = true
-  useTrackEvent('share', { article: articleSlug })
+  useTrackEvent('share', { value: articleSlug })
 }
 
 const getLikedArticles = () => {
