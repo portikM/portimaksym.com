@@ -1,3 +1,5 @@
+const articleComponent = '~/pages/_article.vue'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
@@ -61,6 +63,16 @@ export default defineNuxtConfig({
         { rel: 'canonical', href: 'https://portimaksym.com' }
       ]
     },
+  },
+  hooks: {
+    'pages:extend'(pages) {
+      // add a route for each article
+      pages.push({
+        name: 'building-design-system-at-kong',
+        path: '/building-design-system-at-kong',
+        file: articleComponent,
+      })
+    }
   },
   devtools: { enabled: true },
   css: [
