@@ -2,14 +2,16 @@
   <ContentDoc v-slot="{ doc }" :path="article ? `articles${$route.path}` : $route.path">
     <div class="flex gap-5">
       <article class="w-full">
-        <ContentRenderer :value="doc" class="document" />
+        <ContentRenderer :value="doc" class="content" />
       </article>
-      <DocumentNavigation :nodes="doc?.body?.children" class="mt-8 hidden md:block" />
+      <ContentToc :nodes="doc?.body?.children" class="mt-8 hidden md:block" />
     </div>
   </ContentDoc>
 </template>
 
 <script setup>
+import ContentToc from '~/components/content/TOC.vue'
+
 defineProps({
   article: {
     type: Boolean,
@@ -19,7 +21,7 @@ defineProps({
 </script>
 
 <style lang="scss">
-.document {
+.content {
   h1 {
     @apply mb-6;
   }
@@ -53,13 +55,13 @@ defineProps({
     }
   }
 
-  a {
-    @apply text-pink-600 hover:text-pink-700 rounded-lg px-0.5 outline-none focus-visible:ring-2 focus-visible:ring-pink-500;
+  // a {
+  //   @apply text-pink-600 hover:text-pink-700 rounded-lg px-0.5 outline-none focus-visible:ring-2 focus-visible:ring-pink-500;
 
-    &[target="_blank"]::after {
-      @apply ml-1 text-sm text-pink-500;
-      content: '↗';
-    }
-  }
+  //   &[target="_blank"]::after {
+  //     @apply ml-1 text-sm;
+  //     content: '\2197';
+  //   }
+  // }
 }
 </style>

@@ -7,6 +7,4 @@ about: implementing a design system
 index: 0
 ---
 
-:banner-title{:title="title" :image="image" :published="published"}
-
 (Coming soon)

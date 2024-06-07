@@ -15,22 +15,24 @@ import AlertTriangle from '~/assets/icons/alert-triangle.svg'
 import AlertCircle from '~/assets/icons/alert-circle.svg'
 
 defineProps({
-  type: String,
-  default: 'info'
+  type: {
+    type: String,
+    default: 'info'
+  }
 })
 </script>
 
 <style lang="scss">
 .alert {
   // info type is default
-  @apply text-blue-600 bg-blue-100/75;
+  @apply text-blue-600 bg-blue-100/75 border border-blue-500;
 
   p {
     @apply mb-0 text-blue-600;
   }
 
   &.success {
-    @apply text-emerald-600 bg-emerald-100/75;
+    @apply text-emerald-600 bg-emerald-100/75 border-emerald-500;
 
     p {
       @apply text-emerald-600;
@@ -38,7 +40,7 @@ defineProps({
   }
 
   &.warning {
-    @apply text-amber-600 bg-amber-100/75;
+    @apply text-amber-600 bg-amber-100/75 border-amber-500;
 
     p {
       @apply text-amber-600;
@@ -46,7 +48,7 @@ defineProps({
   }
 
   &.danger {
-    @apply text-red-600 bg-red-100/75;
+    @apply text-red-600 bg-red-100/75 border-red-500;
 
     p {
       @apply text-red-600;
