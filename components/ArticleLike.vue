@@ -1,5 +1,5 @@
 <template>
-  <div class="p-[1.35rem] rounded-lg shadow-lg bg-pink-50 flex flex-col lg:flex-row gap-2 items-center justify-center border-2 border-pink-300 mt-8">
+  <div class="p-[1.35rem] rounded-lg shadow-lg bg-pink-50 flex flex-col lg:flex-row gap-2 items-center justify-center border-2 border-pink-300 mt-8 text-center">
     If you enjoyed reading this article, please consider
     <button class="font-bold flex gap-2 items-center px-2 py-1 rounded-lg hover:text-gray-600 outline-none focus-visible:ring-2 focus-visible:ring-pink-500 border border-pink-300 border-dashed relative" :class="{ 'text-gray-500 pointer-events-none': likedArticle }" :disabled="likedArticle" @click="onLike">
       <Heart :filled="!likedArticle" class="stroke-current text-pink-500" :class="{ '!text-pink-300': likedArticle }" />
@@ -33,38 +33,40 @@ import Heart from '~/assets/icons/heart.svg'
 import { useClipboard } from '@vueuse/core'
 
 const props = defineProps({
+  articleSlug: {
+    type: String,
+    required: true
+  },
   articleAbout: {
     type: String,
     default: ''
-  }
+  },
 })
 
-const route = useRoute()
-const copyText = `I just finished reading this cool article${props.articleAbout ? ' about ' + props.articleAbout : ''} (3-5 min read):\nhttps://portimaksym.com${route.path}`
+const copyText = `I just finished reading this cool article${props.articleAbout ? ' about ' + props.articleAbout : ''} (3-5 min read):\nhttps://portimaksym.com/${props.articleSlug}`
 
 const { isSupported, copy } = useClipboard({ copyText })
 
 const localStorageItem = 'portimaksym-liked-articles'
-const articleSlug = route.path.substring(1)
 
 const likedArticles = ref([])
 const justLikedArticle = ref(false)
 const displayClipboardMessage = ref(false)
 
-const previouslyLikedArticle = computed(() => likedArticles.value.includes(articleSlug))
+const previouslyLikedArticle = computed(() => likedArticles.value.includes(props.articleSlug))
 const likedArticle = computed(() => previouslyLikedArticle.value || justLikedArticle.value)
 
 const onLike = () => {
   justLikedArticle.value = true
 
   likeArticle()
-  useTrackEvent('like', { value: articleSlug })
+  useTrackEvent('like', { value: props.articleSlug })
 }
 
 const likeArticle = () => {
   if (localStorage) {
     try {
-      localStorage.setItem(localStorageItem, [...likedArticles.value, articleSlug].join(','))
+      localStorage.setItem(localStorageItem, [...likedArticles.value, props.articleSlug].join(','))
     } catch {
       // no error handling needed
     }
@@ -75,7 +77,7 @@ const onShare = () => {
   copy(copyText)
 
   displayClipboardMessage.value = true
-  useTrackEvent('share', { value: articleSlug })
+  useTrackEvent('share', { value: props.articleSlug })
 }
 
 const getLikedArticles = () => {

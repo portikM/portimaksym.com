@@ -1,3 +1,5 @@
+import { getArticlesRoutes } from './utils/getArticlesRoutes'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
@@ -61,6 +63,12 @@ export default defineNuxtConfig({
         { rel: 'canonical', href: 'https://portimaksym.com' }
       ]
     },
+  },
+  hooks: {
+    // add a route for each article
+    'pages:extend'(pages) {
+      getArticlesRoutes().forEach((article) => pages.push(article))
+    }
   },
   devtools: { enabled: true },
   css: [

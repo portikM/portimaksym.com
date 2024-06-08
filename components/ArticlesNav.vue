@@ -47,13 +47,11 @@ const { data } = await useAsyncData('articles', () =>
   .limit(props.limit)
   .find())
 
-if (data.value) {
-  const articles = data.value.map(entry => ({
-    title: entry.title,
-    description: entry.description,
-    published: entry.published,
-    slug: entry._path.replace('/articles/', ''),
-    image: entry.image,
-  }))
-}
+const articles = data.value.map(entry => ({
+  title: entry.title,
+  description: entry.description,
+  published: entry.published,
+  slug: entry._path.replace('/articles/', ''),
+  image: entry.image,
+}))
 </script>
