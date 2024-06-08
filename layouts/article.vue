@@ -31,7 +31,7 @@ const { pending, data } = await useAsyncData(`articles${articlePath}`, () =>
 const { title, description, about: articleAbout, image, published } = data.value
   
 useHead({
-  titleTemplate: () => title,
+  titleTemplate: () => `${title} (3-5 min read)`,
   meta: [
     {
       hid: 'description',
@@ -41,7 +41,7 @@ useHead({
     {
       hid: 'og:title',
       name: 'og:title',
-      content: title
+      content: `${title} (3-5 min read)`
     },
     {
       hid: 'og:description',
@@ -56,7 +56,7 @@ useHead({
     {
       hid: 'twitter:title',
       name: 'twitter:title',
-      content: title
+      content: `${title} (3-5 min read)`
     },
     {
       hid: 'twitter:description',
