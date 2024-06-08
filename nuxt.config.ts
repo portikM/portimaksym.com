@@ -1,4 +1,4 @@
-const articleComponent = '~/pages/_article.vue'
+import { getArticlesRoutes } from './utils/getArticlesRoutes'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -65,13 +65,9 @@ export default defineNuxtConfig({
     },
   },
   hooks: {
+    // add a route for each article
     'pages:extend'(pages) {
-      // add a route for each article
-      pages.push({
-        name: 'building-design-system-at-kong',
-        path: '/building-design-system-at-kong',
-        file: articleComponent,
-      })
+      getArticlesRoutes().forEach((article) => pages.push(article))
     }
   },
   devtools: { enabled: true },
