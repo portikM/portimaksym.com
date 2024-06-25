@@ -4,8 +4,7 @@
       &#8592; Back to home
     </nuxt-link>
     <div class="mt-8">
-      <!-- TODO: unignore once the article is ready -->
-      <ArticlesNav ignore="building-design-system-at-kong" />
+      <ArticlesNav />
     </div>
   </div>
 </template>
