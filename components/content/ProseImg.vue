@@ -1,3 +1,4 @@
+<!-- TODO: remove this component once useNuxtImage error is resolved -->
 <template>
   <img
     :src="src"

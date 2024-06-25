@@ -43,7 +43,7 @@ importers:
         specifier: ^5.4.5
         version: 5.4.5
       vue-tsc:
-        specifier: ^1.8.22
+        specifier: ^1
         version: 1.8.22(typescript@5.4.5)
 
 packages:
