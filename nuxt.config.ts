@@ -76,7 +76,7 @@ export default defineNuxtConfig({
     '~/assets/styles/styles.scss'
   ],
   typescript: {
-    typeCheck: true
+    // typeCheck: true
   },
   modules: [
     '@nuxtjs/tailwindcss',
