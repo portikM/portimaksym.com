@@ -7,12 +7,17 @@
           Stand with Ukraine 🇺🇦
         </a>
       </div>
-      <div class="relative flex items-center max-w-6xl h-fullpage">
+      <div class="relative flex flex-col gap-5 justify-center max-w-6xl h-fullpage">
         <h1 class="-mt-20 pr-2 text-3xl sm:text-4xl md:text-5xl">
           Hello, my name is
           <br />
           Maksym Portianoi
         </h1>
+        <div>
+          <nuxt-link to="/articles" class="text-pink-500 hover:text-pink-600 text-xl p-0.5 rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-pink-500">
+            Articles &#8594;
+          </nuxt-link>
+        </div>
         <div class="absolute bottom-40 sm:bottom-12 inline-flex">
           <SocialMediaLinks />
         </div>

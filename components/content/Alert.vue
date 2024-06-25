@@ -1,5 +1,5 @@
 <template>
-  <div class="alert w-full flex gap-2 p-4 text-base rounded-lg shadow-lg mb-4" :class="type">
+  <div class="alert w-full flex gap-2 p-4 text-base rounded-lg shadow-lg my-4" :class="type">
     <Smile v-if="type === 'success'" filled class="stroke-current mt-1 shrink-0" />
     <AlertTriangle v-else-if="type === 'warning'" filled class="stroke-current mt-1 shrink-0" />
     <AlertCircle v-else-if="type === 'danger'" filled class="stroke-current mt-1 shrink-0" />
