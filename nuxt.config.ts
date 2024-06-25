@@ -76,6 +76,7 @@ export default defineNuxtConfig({
     '~/assets/styles/styles.scss'
   ],
   typescript: {
+    // TODO: enable type checking
     // typeCheck: true
   },
   modules: [

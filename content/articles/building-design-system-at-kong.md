@@ -1,7 +1,7 @@
 ---
 title: Things I learned while building a design system at Kong
 description: I refactored our entire open-source UI component library. Here are a few lessons I learned.
-published: June 24, 2024
+published: June 25, 2024
 image: kong_design_system_banner.png
 about: implementing a design system
 index: 0
