@@ -18,51 +18,38 @@ export default defineNuxtConfig({
           content: 'index, follow'
         },
         {
-          hid: 'description',
           name: 'description',
           content: 'I am a software engineer with a passion for UX and a grain of curiosity'
         },
         {
-          hid: 'og:type',
-          name: 'og:type',
           property: 'og:type',
           content: 'website'
         },
         {
-          hid: 'og:title',
-          name: 'og:title',
           property: 'og:title',
           content: 'Maksym Portianoi'
         },
         {
-          hid: 'og:description',
-          name: 'og:description',
           property: 'og:description',
           content: 'I am a software engineer with a passion for UX and a grain of curiosity'
         },
         {
-          hid: 'og:image',
-          name: 'og:image',
           property: 'og:image',
           content: 'https://portimaksym.com/og_image.png'
         },
         {
-          hid: 'twitter:card',
           name: 'twitter:card',
           content: 'summary_large_image'
         },
         {
-          hid: 'twitter:title',
           name: 'twitter:title',
           content: 'Maksym Portianoi'
         },
         {
-          hid: 'twitter:description',
           name: 'twitter:description',
           content: 'I am a software engineer with a passion for UX and a grain of curiosity'
         },
         {
-          hid: 'twitter:image',
           name: 'twitter:image',
           content: 'https://portimaksym.com/og_image.png'
         }

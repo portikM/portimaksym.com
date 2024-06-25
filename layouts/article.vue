@@ -34,46 +34,34 @@ useHead({
   titleTemplate: () => `${title} (3-5 min read)`,
   meta: [
     {
-      hid: 'og:type',
-      name: 'og:type',
       property: 'og:type',
       content: 'article'
     },
     {
-      hid: 'description',
       name: 'description',
       content: description
     },
     {
-      hid: 'og:title',
-      name: 'og:title',
       property: 'og:title',
       content: `${title} (3-5 min read)`
     },
     {
-      hid: 'og:description',
-      name: 'og:description',
       property: 'og:description',
       content: description
     },
     {
-      hid: 'og:image',
-      name: 'og:image',
       property: 'og:image',
       content: `https://portimaksym.com/images/${image}`
     },
     {
-      hid: 'twitter:title',
       name: 'twitter:title',
       content: `${title} (3-5 min read)`
     },
     {
-      hid: 'twitter:description',
       name: 'twitter:description',
       content: description
     },
     {
-      hid: 'twitter:image',
       name: 'twitter:image',
       content: `https://portimaksym.com/images/${image}`
     }
