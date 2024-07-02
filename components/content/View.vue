@@ -55,7 +55,7 @@ defineProps({
   }
 
   pre {
-    @apply p-2 bg-gray-700 rounded-lg shadow-md my-4 overflow-x-auto;
+    @apply px-2 bg-gray-700 rounded-lg shadow-md my-4 overflow-x-auto;
 
     code {
       span.line {
