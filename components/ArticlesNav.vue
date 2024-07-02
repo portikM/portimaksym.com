@@ -1,5 +1,10 @@
 <template>
   <div v-if="articles && articles.length">
+    <div class="mb-5">
+      <slot name="title">
+        <h1>My articles</h1>
+      </slot>
+    </div>
     <nav>
       <ul class="flex flex-col gap-10">
         <li v-for="article in articles" :key="article.slug">
@@ -35,7 +40,7 @@ const props = defineProps({
   limit: {
     type: Number,
     default: 0
-  }
+  },
 })
 
 const ignoreReadmeClause = { $not: '/articles/readme' }

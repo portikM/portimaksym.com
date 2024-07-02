@@ -27,7 +27,7 @@ In this article, I will talk about my experience implementing a design system at
 ## Background
 
 ::wrapper{classNames="mb-6"}
-[Kong Konnect](https://konghq.com/products/kong-konnect){class="link" target="_blank" rel="noopener"} is our primary application. I am not going focus too much on explaining what it does, but it is important to understand a few things about how our design and engineering teams are operating.
+[Kong Konnect](https://konghq.com/products/kong-konnect){class="link" target="_blank" rel="noopener"} is our primary application. I am not going to focus too much on explaining what it does, but it is important to understand a few things about how our design and engineering teams are operating.
 ::
 
 ### App setup and component structure
@@ -70,7 +70,7 @@ To ensure no one accidentally uses outdated utility classes, we created a custom
 ### Design tokens
 
 ::wrapper{classNames="mb-6"}
-We chose [Style Dictionary](https://amzn.github.io/style-dictionary/#/){class="link" target="_blank" rel="noopener"} to serve as our design tokens library and the single source of truth for all our design tokens.
+We chose [Style Dictionary](https://amzn.github.io/style-dictionary/#/){class="link" target="_blank" rel="noopener"} to serve as the foundation for building out our design token library.
 
 Naming is hard. After hours of research and back-and-forth on which convention to follow, we finally agreed on a naming structure. I won't delve too deeply into token naming, as it deserves an article of its own.
 
@@ -78,7 +78,7 @@ Naming is hard. After hours of research and back-and-forth on which convention t
 
 The design team owns the design tokens and decides when and what tokens to add based on the needs of the design system.
 
-Enforcing the correct token usage in code, however, is engineering team responsibility. We quickly figured, that it's only a matter of time before someone accidentally misuses a token or two:
+Enforcing the correct token usage in code, however, is the engineering team responsibility. We quickly figured, that it's only a matter of time before someone accidentally misuses a token or two:
 
 ```css
 /* incorrect, kui-space-* token does not belong in font-size property */
@@ -117,7 +117,7 @@ After a few months we only had a handful of old icons left in the entire codebas
 ### Kongponents reskin
 
 ::wrapper{classNames="mb-8"}
-At first we were planning to only do what's necessary to give the components new look and feel and to integrate new design tokens into the styles. However, we realized that with many outdated variations of different components going away, we will need to revisit most of the props and slots in every component. Since doing that practically meant going through each component line-by-line, we decided to also tackle a few code smells that we found along the way. In the end, apart from styling changes, Kongponents v9 includes:
+At first we were planning to only do what's necessary to give the components a new look and feel and to integrate new design tokens into the styles. However, we realized that with many outdated variations of different components going away, we will need to revisit most of the props and slots in every component. Since doing that practically meant going through each component line-by-line, we decided to also tackle a few code smells that we found along the way. In the end, apart from styling changes, Kongponents v9 includes:
 
 * Accessibility improvements
 * Better and more intuitive prop naming
@@ -133,4 +133,4 @@ The obvious win here is that we have refreshed the look and feel of our entire p
 
 ## Outro
 
-Implementation of design system cannot be treated as event but rather a process. In the future we will be dealing with more challenges scaling and solidifying it. However, I am proud of what our team has accomplished so far and value the lessons we learned.
+Implementation of a design system cannot be treated as an event but rather a process. In the future we will be dealing with more challenges scaling and solidifying it. However, I am proud of what our team has accomplished so far and value the lessons we learned.
